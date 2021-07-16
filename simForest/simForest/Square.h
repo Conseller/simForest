@@ -4,6 +4,6 @@
 
 class Square {
 	char ID;
-	GroundSquare[][];
-	CanopySquare[][];
+	groundSubSquare groundSquares[10][10];
+	CanopySquare canopySquares[10][10];
 };

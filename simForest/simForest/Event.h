@@ -3,9 +3,12 @@
 
 class Event {
 
-	Date date;
-	int weight;
+
 
 public:
-	void ExecuteEvent();
+	void ExecuteEvent();	
+	Event(Date eventDate, int eventWeight);
+	Event();
+	Date date;
+	int weight;
 };

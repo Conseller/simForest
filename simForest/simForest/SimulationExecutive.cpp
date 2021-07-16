@@ -6,8 +6,9 @@
 SimulationExecutive::SimulationExecutive()
 {
 	currentDate = Date();
-	firstEvent = Event();
+	firstEvent = Event(currentDate);
 	eventQueue.push(firstEvent);
+	hasNextEvent = true;
 }
 
 void SimulationExecutive::runSimulation()
@@ -15,8 +16,16 @@ void SimulationExecutive::runSimulation()
 	while (hasNextEvent)
 	{
 		Event currentEvent = eventQueue.front();
+		if (currentEvent.date > currentDate)
+		{
+			endOfDay();
+		}
 		currentEvent.ExecuteEvent();
 		eventQueue.pop();
+		if (eventQueue.size() == 0)
+		{
+			hasNextEvent = false;
+		}
 	}
 }
 

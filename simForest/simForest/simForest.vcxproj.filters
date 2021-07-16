@@ -60,6 +60,12 @@
     <ClInclude Include="Wound.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Oak.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GrowEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Date.cpp">
@@ -72,6 +78,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Weather.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Oak.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GrowEvent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

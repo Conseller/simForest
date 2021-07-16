@@ -7,6 +7,7 @@ class Date {
 	int Year;
 
 	Weather todaysWeather;
+	
 
 
 public:

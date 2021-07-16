@@ -43,3 +43,11 @@ Date Date::AdvanceDate(Date currentDate)
 
 	return currentDate;
 }
+
+bool Date::operator < (const Date& d)
+{
+	if (this.Day < d.Day && this.Month < d.Month && this.Year < d.Year)
+	{
+		return true;
+	}
+}

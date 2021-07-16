@@ -7,6 +7,10 @@
 class groundSubSquare {
 public:
 	int ID;
+	char squareID;
+
+	groundSubSquare(BaseTree* thisSquaresTree);
+	groundSubSquare(int ID, char squareID);
 	
 private: 
 	BaseTree* mainTree;

@@ -3,5 +3,5 @@
 #include "Square.h"
 
 class Map {
-	Square bigGrid[][];
+	Square bigGrid[10][10];
 };
