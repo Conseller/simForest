@@ -8,11 +8,14 @@
 
 
 
-int Main(){
-	groundSubSquare firstTreeLocation(1, 'A');
+int main(int argc, char** argv)
+{
+	GroundSquare firstTreeLocation(1, 'A');
 	Oak testTree(firstTreeLocation);
+
 	std::vector<BaseTree> allTheTrees;
 	allTheTrees.push_back(testTree);
+
 	SimulationExecutive simulationExecutive;
 	SimulationExecutive.runSimulation();
 }

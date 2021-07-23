@@ -4,12 +4,12 @@
 #include <vector>
 
 
-GrowEvent::ExecuteEvent(vector<BaseTree>& allTheTrees)
+void GrowEvent::ExecuteEvent(std::vector<BaseTree>& allTheTrees)
 {
-	foreach(BaseTree tree : allTheTrees)
+	for (BaseTree& tree : allTheTrees)
 	{
-		tree.height = tree.height * 1.0012526;
-		tree.storedWater = tree.storedWater - 10;
+		tree.setHeight(tree.getHeight() * 1.0012526);
+		tree.setStoredWater(tree.getStoredWater() - 10);
 		tree.storedN--;
 		tree.storedPh--;
 		tree.storedMa--;
