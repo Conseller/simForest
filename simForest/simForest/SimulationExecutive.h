@@ -18,4 +18,5 @@ public:
 	void scheduleEventAt(Date date, int weight, Event* eventToSchedule);
 	void scheduleEventIn(int delay, int weight, Event* eventToSchedule);
 	void runSimulation();
+	void addEvent(Event eventToAdd);
 };

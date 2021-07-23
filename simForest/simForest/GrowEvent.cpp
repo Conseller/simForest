@@ -21,3 +21,8 @@ GrowEvent::ExecuteEvent(vector<BaseTree>& allTheTrees)
 	//effectedTree.storedPh--;
 	//effectedTree.storedMa--;
 }
+
+GrowEvent::GrowEvent()
+{
+
+}

@@ -13,6 +13,8 @@ int Main(){
 	Oak testTree(firstTreeLocation);
 	std::vector<BaseTree> allTheTrees;
 	allTheTrees.push_back(testTree);
+	GrowEvent firstDayGrow;
+	SimulationExecutive.addEvent(firstDayGrow);
 	SimulationExecutive simulationExecutive;
 	SimulationExecutive.runSimulation();
 }

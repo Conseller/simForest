@@ -4,5 +4,6 @@
 
 class GrowEvent : public Event
 {
+	GrowEvent();
 	void ExecuteEvent(Date date, int weight, BaseTree* effectedTrees);
 };

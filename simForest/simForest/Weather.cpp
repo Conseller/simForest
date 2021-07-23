@@ -14,7 +14,7 @@ Weather::Weather() {
 
 void Weather::Rain(Map map, double howMuch)
 {
-	foreach(groundSubSquare square : map)//needs fixed
+	for(groundSubSquare square : map)//needs fixed
 	{
 		square.terrain.water = square.terrain.water + howMuch;
 	}
@@ -22,7 +22,7 @@ void Weather::Rain(Map map, double howMuch)
 
 void Weather::windStorm(std::vector<BaseTree> allTheTrees, double windspeed)
 {
-	foreach(BaseTree tree : allTheTrees)
+	for(BaseTree tree : allTheTrees)
 	{
 		if (windspeed > 20 && tree.symmetry < 70)
 		{

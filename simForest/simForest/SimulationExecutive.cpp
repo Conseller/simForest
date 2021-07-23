@@ -34,3 +34,8 @@ void SimulationExecutive::endOfDay()
 	currentDate = currentDate.AdvanceDate(currentDate);
 	std::sort(eventQueue.front(), eventQueue.back());
 }
+
+void SimulationExecutive::addEvent(Event eventToAdd)
+{
+	eventQueue.push(eventToAdd);
+}

@@ -159,10 +159,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Date.cpp" />
+    <ClCompile Include="GroundSquare.cpp" />
     <ClCompile Include="GrowEvent.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Map.cpp" />
     <ClCompile Include="Oak.cpp" />
     <ClCompile Include="SimulationExecutive.cpp" />
+    <ClCompile Include="Square.cpp" />
     <ClCompile Include="Weather.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
