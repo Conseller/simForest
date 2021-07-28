@@ -6,45 +6,51 @@
 #include "GroundSquare.h"
 
 
-
-
 class BaseTree {
 public:
+	enum GrowthStage { sprout, seedling, sapling, juvenile, adult };
+	enum TreeType { deciduous, coniferous };
+
 	std::string name;
 
-	void Grow(float sun, double water);
-	int getAge() { return age; }
+	void grow(float sun, double water);
+
+	int getAge() {
+        return age;
+    }
+
 	float getSymmetry() { return symmetry; }
 	float getHealth() { return health; }
 	double getHeight() { return height; }
 	std::vector<BaseTree*> getConnections() { return connections; }
 	double getWater() { return storedWater; }
-	std::string getGrowthStage() { return growthStage; };
-	std::string getTreeType() { return treeType; };
-	double getN() { return storedN; }
+	double decreaseStoredWater(int amount);
+	double decreaseStoredWater();
+	GrowthStage getGrowthStage() { return growthStage; }
+	TreeType getTreeType() { return treeType; }
 	double getPh() { return storedPh; }
 	double getMa() { return storedMa; }
 	double getN() { return storedN; }
 
-	void setName(std::string newName) { name = newName; };
-	void setAge(int newAge) {	age = newAge; };
-	void setSymmetry(float newSymmetry) {	symmetry = newSymmetry; };
-	void setSun(float newSun) {	fullSun = newSun; };
-	void setHealth(float newHealth) { health = newHealth; };
-	void setHeight(double newHeight) {	height = newHeight; };
-	void setWater(int newWater) {	storedWater = newWater; };
-	void setN(int newN) {	storedN = newN; };
-	void setPh(int newPh) {	storedPh = newPh; };
-	void setMa(int newMa) {	storedMa = newMa; };
-	void setLocation(groundSubSquare newLocation) { location = newLocation; };
-	void setGrowthStage(std::string stage) { growthStage = stage; };
-	void setTreeType(std::string type) { treeType = type; };
+	void setName(std::string newName) { name = newName; }
+	void setAge(int newAge) {	age = newAge; }
+	void setSymmetry(float newSymmetry) {	symmetry = newSymmetry; }
+	void setSun(float newSun) {	fullSun = newSun; }
+	void setHealth(float newHealth) { health = newHealth; }
+	void setHeight(double newHeight) {	height = newHeight; }
+	void setWater(int newWater) {	storedWater = newWater; }
+	void setN(int newN) {	storedN = newN; }
+	void setPh(int newPh) {	storedPh = newPh; }
+	void setMa(int newMa) {	storedMa = newMa; }
+	void setLocation(GroundSquare newLocation) { location = newLocation; }
+	void setGrowthStage(GrowthStage stage) { growthStage = stage; }
+	void setTreeType(TreeType type) { treeType = type; }
 
 	void addWounds(std::string woundType);
 	void addConnections(BaseTree* connection);
 
 
-private:
+protected:
 	float symmetry;
 	int age;
 	float fullSun;
@@ -55,9 +61,10 @@ private:
 	double storedN;
 	double storedPh;
 	double storedMa;
-	groundSubSquare location;
-	enum growthStage { sprout, seedling, sapling, juvenile, adult };
-	enum treeType { deciduous, coniferous };
+	GroundSquare location;
+	GrowthStage growthStage;
+	TreeType treeType;
+
 	std::vector<BaseTree*> connections;
 	std::vector<Wound> wounds;
 
@@ -66,7 +73,7 @@ private:
 	void Die();
 	void attractInsects();
 	void warnOfDanger();
-	void pullWaterFromEarth(groundSubSquare square);
+	void pullWaterFromEarth(GroundSquare square);
 	void dropLeaves(); //deciduous only
 	void needWater();
 	void needNutrients(std::string nutrient, double amount);

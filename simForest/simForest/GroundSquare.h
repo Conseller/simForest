@@ -1,8 +1,8 @@
 #pragma once
 
 #include "Terrain.h"
-#include "BaseTree.h"
 
+class BaseTree;
 
 class GroundSquare {
 public:

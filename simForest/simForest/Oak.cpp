@@ -3,6 +3,7 @@
 #include "BaseTree.h"
 
 Oak::Oak()
+    :location(1, 'A')
 {
 	setAge(250);
 	symmetry = 1.0;
@@ -14,11 +15,11 @@ Oak::Oak()
 	storedN = 100;
 	storedPh = 100;
 	storedMa = 100;
-	location = groundSubSquare(1, 'A');
 }
 
 
-Oak::Oak(groundSubSquare treeLocation)
+Oak::Oak(GroundSquare location)
+    :location(location)
 {
 	age = 250;
 	symmetry = 1.0;
@@ -30,5 +31,4 @@ Oak::Oak(groundSubSquare treeLocation)
 	storedN = 100;
 	storedPh = 100;
 	storedMa = 100;
-	location = treeLocation;
 }
