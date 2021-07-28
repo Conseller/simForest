@@ -4,15 +4,20 @@
 #include <vector>
 
 
-void GrowEvent::ExecuteEvent(std::vector<BaseTree>& allTheTrees)
+GrowEvent::GrowEvent(std::vector<BaseTree>* allTheTrees)
+{
+	allTheTreesPointer = allTheTrees;
+}
+
+void GrowEvent::ExecuteEvent()
 {
 	for (BaseTree& tree : allTheTrees)
 	{
 		tree.setHeight(tree.getHeight() * 1.0012526);
-		tree.setStoredWater(tree.getStoredWater() - 10);
-		tree.storedN--;
-		tree.storedPh--;
-		tree.storedMa--;
+		tree.setWater(tree.getWater() - 10);
+		tree.setN(tree.getN() - 1);
+		tree.setPh(tree.getPh() - 1);
+		tree.setMa(tree.getMa() - 1);
 	}
 	
 	//effectedTree.height = effectedTree.height * 1.0012526;

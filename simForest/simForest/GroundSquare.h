@@ -16,5 +16,6 @@ private:
 	BaseTree* mainTree;
 	BaseTree* growingTree;
 	Terrain terrain;
+	double acorns;
 
 };

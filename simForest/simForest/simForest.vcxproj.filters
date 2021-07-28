@@ -66,12 +66,15 @@
     <ClInclude Include="GrowEvent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="OutputEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Date.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SimulationExecutive.cpp">
@@ -93,6 +96,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Square.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputEvent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

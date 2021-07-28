@@ -6,7 +6,7 @@
 SimulationExecutive::SimulationExecutive()
 {
 	currentDate = Date();
-	firstEvent = Event(currentDate);
+	firstEvent = GrowEvent(currentDate);
 	eventQueue.push(firstEvent);
 	hasNextEvent = true;
 }

@@ -15,36 +15,102 @@ public:
 
 	void grow(float sun, double water);
 
+#pragma region Getters and Setters
 	int getAge() {
-        return age;
-    }
+		return age;
+	}
 
-	float getSymmetry() { return symmetry; }
-	float getHealth() { return health; }
-	double getHeight() { return height; }
-	std::vector<BaseTree*> getConnections() { return connections; }
-	double getWater() { return storedWater; }
-	double decreaseStoredWater(int amount);
-	double decreaseStoredWater();
-	GrowthStage getGrowthStage() { return growthStage; }
-	TreeType getTreeType() { return treeType; }
-	double getPh() { return storedPh; }
-	double getMa() { return storedMa; }
-	double getN() { return storedN; }
+	float getSymmetry() {
+		return symmetry;
+	}
+	float getHealth()
+	{
+		return health;
+	}
 
-	void setName(std::string newName) { name = newName; }
-	void setAge(int newAge) {	age = newAge; }
-	void setSymmetry(float newSymmetry) {	symmetry = newSymmetry; }
-	void setSun(float newSun) {	fullSun = newSun; }
-	void setHealth(float newHealth) { health = newHealth; }
-	void setHeight(double newHeight) {	height = newHeight; }
-	void setWater(int newWater) {	storedWater = newWater; }
-	void setN(int newN) {	storedN = newN; }
-	void setPh(int newPh) {	storedPh = newPh; }
-	void setMa(int newMa) {	storedMa = newMa; }
-	void setLocation(GroundSquare newLocation) { location = newLocation; }
-	void setGrowthStage(GrowthStage stage) { growthStage = stage; }
-	void setTreeType(TreeType type) { treeType = type; }
+	double getHeight() {
+		return height;
+	}
+	std::vector<BaseTree*> getConnections() {
+		return connections;
+	}
+	double getWater() {
+		return storedWater;
+	}
+	//double decreaseStoredWater(int amount);
+	//double decreaseStoredWater();
+	GrowthStage getGrowthStage() {
+		return growthStage;
+	}
+	TreeType getTreeType() {
+		return treeType;
+	}
+
+	double getPh() {
+		return storedPh;
+	}
+
+	double getMa() {
+		return storedMa;
+	}
+
+	double getN() {
+		return storedN;
+	}
+
+	void setName(std::string newName) {
+		name = newName;
+	}
+
+	void setAge(int newAge) {
+		age = newAge;
+	}
+
+	void setSymmetry(float newSymmetry) {
+		symmetry = newSymmetry;
+	}
+
+	void setSun(float newSun) {
+		fullSun = newSun;
+	}
+
+	void setHealth(float newHealth) {
+		health = newHealth;
+	}
+
+	void setHeight(double newHeight) {
+		height = newHeight;
+	}
+
+	void setWater(int newWater) {
+		storedWater = newWater;
+	}
+
+	void setN(int newN) {
+		storedN = newN;
+	}
+
+	void setPh(int newPh) {
+		storedPh = newPh;
+	}
+
+	void setMa(int newMa) {
+		storedMa = newMa;
+	}
+
+	void setLocation(GroundSquare newLocation) {
+		location = newLocation;
+	}
+
+	void setGrowthStage(GrowthStage stage) {
+		growthStage = stage;
+	}
+
+	void setTreeType(TreeType type) {
+		treeType = type;
+	}
+#pragma endregion
+
 
 	void addWounds(std::string woundType);
 	void addConnections(BaseTree* connection);

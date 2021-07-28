@@ -5,7 +5,9 @@
 
 class GrowEvent : public Event
 {
+	std::vector<BaseTree>* allTheTreesPointer;
 public:
+	GrowEvent(std::vector<BaseTree>* allTheTrees);
 	void ExecuteEvent(Date date, int weight, BaseTree* effectedTrees);
-    void ExecuteEvent(std::vector<BaseTree>& allTheTrees);
+    void ExecuteEvent();
 };

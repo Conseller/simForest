@@ -5,19 +5,19 @@ GroundSquare::GroundSquare()
 	ID = 1;
 	squareID = A;
 }
-
+/*
 GroundSquare::GroundSquare(BaseTree* thisSquaresTree)
 {
 	ID = 1;
 	squareID = A;
 	mainTree = thisSquaresTree;
 	growingTree = nullptr;
-}
+}*/
 
-GroundSquare::GroundSquare(int ID, char SquareID)
+GroundSquare::GroundSquare(int newID, char newSquareID)
 {
-	ID = ID;
-	squareID = SquareID;
+	ID = newID;
+	squareID = newSquareID;
 	mainTree = nullptr;
 	growingTree = nullptr;
 }
