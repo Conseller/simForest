@@ -2,6 +2,11 @@
 #include "Event.h"
 #include "BaseTree.h"
 
+/*
+* output to console for now
+*/
+
+
 class outputEvent : public Event
 {
 public: 

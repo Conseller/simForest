@@ -2,6 +2,8 @@
 #include "GroundSquare.h"
 #include "CanopySquare.h"
 
+//Grid within a grid
+
 class Square {
 public:
 	Square(char ID);

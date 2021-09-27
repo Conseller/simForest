@@ -1,15 +1,19 @@
 #pragma once
 #include <string>
 #include <vector>
+#include <memory>
 #include "Event.h"
 #include "Wound.h"
 #include "GroundSquare.h"
 
+/*
+*Base class from which all of the other trees will be inherited
+*/
 
 class BaseTree {
 public:
-	enum GrowthStage { sprout, seedling, sapling, juvenile, adult };
-	enum TreeType { deciduous, coniferous };
+	enum GrowthStage { sprout, seedling, sapling, juvenile, adult }; //effects behavior for growth rate, nutrient needs etc
+	enum TreeType { deciduous, coniferous }; //effects behavior for reproduction, overwintering etc. 
 
 	std::string name;
 
@@ -31,7 +35,7 @@ public:
 	double getHeight() {
 		return height;
 	}
-	std::vector<BaseTree*> getConnections() {
+	std::vector<std::shared_ptr<BaseTree>> getConnections() {
 		return connections;
 	}
 	double getWater() {
@@ -112,21 +116,21 @@ public:
 #pragma endregion
 
 
-	void addWounds(std::string woundType);
-	void addConnections(std::shared_ptr<BaseTree> connection);
+	void addWounds(std::string woundType); //if the tree gets damaged or has an infestation
+	void addConnections(std::shared_ptr<BaseTree> connection); //Trees are connected to their immediate neighbours and can communicate with each other and share resources
 
 
 protected:
-	float symmetry;
+	float symmetry; // value between 0.0 and 1.0 indicating how symmetrical is the tree with 0.0 being the least. 
 	int age;
-	float fullSun;
-	float health;
+	float fullSun; // value between 0.0 and 1.0 indicating how much sun is being blocked before it reaches the leaves. 1.0 for direct sun and 0.0 for darkness
+	float health; // value between 0.0 and 1.0 indicating the overall health of the tree. Wounds, lack of water, low symmetry, and weather events can all lower health
 	double height;
-	int connectedness;
-	double storedWater;
-	double storedN;
-	double storedPh;
-	double storedMa;
+	int connectedness; //Trees consider highly connected members of the community to be valuable, a tree that has many connections can serve as a communications hub.
+	double storedWater; //amount of water stored by the tree
+	double storedN; // amount of nitrogen
+	double storedPh; // amount of phosphorous
+	double storedMa; // amount of magnesium
 	GroundSquare location;
 	GrowthStage growthStage;
 	TreeType treeType;
@@ -136,11 +140,11 @@ protected:
 
 	//Event ReproduceEvent;
 
-	void Die();
-	void attractInsects();
-	void warnOfDanger();
+	void die(); //called when health meets a threshold or when disaster falls
+	void attractInsects(); //some inherited tree types can attract insects to defend themselves from insect attack
+	void warnOfDanger(); // can communicate danger such as insects 
 	void pullWaterFromEarth(GroundSquare square);
-	void dropLeaves(); //deciduous only
+	void dropLeaves(); //deciduous only, should be its own event.
 	void needWater();
 	void needNutrients(std::string nutrient, double amount);
 
@@ -151,7 +155,7 @@ protected:
 
 void BaseTree::addConnections(std::shared_ptr<BaseTree> connection)
 { 
-	connections.push_back(connection); //add connected tree pointer to this.connections
+	connections.push_back(connection); //add connected tree pointer to this.connections, what the problem is
 	BaseTree* thisTreePointer = this;
 	connection->addConnections(thisTreePointer); //add this tree to the connections of the tree that's being connected to
 	this->connectedness++; 

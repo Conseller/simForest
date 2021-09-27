@@ -4,6 +4,10 @@
 #include <vector>
 #include <memory>
 
+/*
+* This event adds height to a tree assuming it has access to the light, water and nutrients that it needs to do a full day's growth
+*/
+
 class GrowEvent : public Event
 {
 	std::vector<std::shared_ptr<BaseTree>> allTheTreesPointer;

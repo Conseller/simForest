@@ -2,7 +2,9 @@
 #include "BaseTree.h"
 #include "GroundSquare.h"
 
-
+/*
+* Inherited BaseTree
+*/
 
 class Oak : public BaseTree
 {

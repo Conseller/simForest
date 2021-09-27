@@ -4,6 +4,11 @@
 #include "BaseTree.h"
 #include "Map.h"
 
+/*
+* Weather is going to be really important for making sure this all works and all the trees don't slowly die. Gonna take some balancing
+* also maybe get an idea of what the weather is like in central Germany during the times of the year. 
+*/
+
 class Weather {
 public:
 	Weather();

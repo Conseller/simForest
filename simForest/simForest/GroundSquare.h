@@ -1,7 +1,9 @@
 #pragma once
 
 #include "Terrain.h"
-
+/*
+* Represents the terrain that the tree is growing in. Each ground square can hold an adult tree and a juvenile tree for now, maybe more later??
+*/
 class BaseTree;
 
 class GroundSquare {
@@ -16,6 +18,6 @@ private:
 	BaseTree* mainTree;
 	BaseTree* growingTree;
 	Terrain terrain;
-	int acorns;
+	//int acorns;
 
 };
