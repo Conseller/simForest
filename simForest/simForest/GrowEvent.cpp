@@ -6,14 +6,14 @@
 
 
 
-GrowEvent::GrowEvent(std::vector<BaseTree>* allTheTrees)
+GrowEvent::GrowEvent(std::vector<std::shared_ptr<BaseTree>> allTheTrees)
 {
 	allTheTreesPointer = allTheTrees;
 }
 
 void GrowEvent::ExecuteEvent()
 {
-	for (BaseTree& tree : allTheTrees)
+	for (BaseTree tree : allTheTrees)//what is the correct syntax for this??
 	{
 		tree.setHeight(tree.getHeight() * GROWTH_RATE);
 		tree.setWater(tree.getWater() - 10);

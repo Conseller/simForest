@@ -2,11 +2,12 @@
 #include <queue>
 #include "Event.h"
 #include "Date.h"
+#include <memory>
 
 
 class SimulationExecutive {
 
-	std::queue<Event> eventQueue;
+	std::queue<std::shared_ptr<Event>> eventQueue;
 	Event firstEvent;
 	Date currentDate;
 	bool hasNextEvent;

@@ -113,7 +113,7 @@ public:
 
 
 	void addWounds(std::string woundType);
-	void addConnections(BaseTree* connection);
+	void addConnections(std::shared_ptr<BaseTree> connection);
 
 
 protected:
@@ -131,7 +131,7 @@ protected:
 	GrowthStage growthStage;
 	TreeType treeType;
 
-	std::vector<BaseTree*> connections;
+	std::vector<std::shared_ptr<BaseTree>> connections;
 	std::vector<Wound> wounds;
 
 	//Event ReproduceEvent;
@@ -149,7 +149,7 @@ protected:
 
 };
 
-void BaseTree::addConnections(BaseTree* connection) 
+void BaseTree::addConnections(std::shared_ptr<BaseTree> connection)
 { 
 	connections.push_back(connection); //add connected tree pointer to this.connections
 	BaseTree* thisTreePointer = this;

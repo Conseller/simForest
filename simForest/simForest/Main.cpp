@@ -18,11 +18,11 @@ int main(int argc, char** argv)
 	SimulationExecutive simExec;
 
 	std::vector<BaseTree> allTheTrees;
-	std::vector<BaseTree>* allTheTreesPointer;
+	std::vector<BaseTree>& allTheTreesReference = allTheTrees;
 	allTheTrees.push_back(testTree);
 	
 	Map map;
-	GrowEvent firstDayGrow(allTheTreesPointer);
+	GrowEvent firstDayGrow(allTheTreesReference);
 	//OutputEvent firstDayOutput
 	simExec.addEvent(firstDayGrow);
 	//SimulationExecutive.addEvent

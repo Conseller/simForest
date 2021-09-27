@@ -4,6 +4,6 @@
 
 class CanopySquare {
 	int ID;
-	float sunCoverage;
+	float sunCoverage; // sun coverage = symmetry * modifier for tree size
 	Microclimate microclimate;
 };

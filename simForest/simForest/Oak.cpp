@@ -33,7 +33,3 @@ Oak::Oak(GroundSquare location)
 	storedMa = 100;
 }
 
-void Oak::dropLeaves()
-{
-
-}
