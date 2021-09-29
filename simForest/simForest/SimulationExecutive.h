@@ -23,4 +23,4 @@ public:
 	void scheduleEventIn(int delay, int weight, Event* eventToSchedule); //schedules an event to occur after a certain delay
 	void runSimulation(); //start simulation
 	void addEvent(Event eventToAdd); //add event to event queue
-}
+};
