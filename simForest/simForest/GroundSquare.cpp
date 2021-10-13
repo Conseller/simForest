@@ -1,9 +1,9 @@
-#include Groundsquare.h
+#include "Groundsquare.h"
 
 GroundSquare::GroundSquare()
 {
 	ID = 1;
-	squareID = A;
+	squareID = 'A';
 }
 /*
 GroundSquare::GroundSquare(BaseTree* thisSquaresTree)

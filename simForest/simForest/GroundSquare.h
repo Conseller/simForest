@@ -11,6 +11,7 @@ public:
 	int ID;
 	char squareID;
 
+	GroundSquare();
 	GroundSquare(BaseTree* thisSquaresTree);
 	GroundSquare(int ID, char squareID);
 	
