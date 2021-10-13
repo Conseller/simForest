@@ -11,6 +11,7 @@
 class GrowEvent : public Event
 {
 	std::vector<std::shared_ptr<BaseTree>> allTheTreesPointer;
+	std::vector<BaseTree> allTheTrees;
 public:
 	const double GROWTH_RATE = 1.0012526;	
 	GrowEvent(std::vector<std::shared_ptr<BaseTree>> allTheTrees);

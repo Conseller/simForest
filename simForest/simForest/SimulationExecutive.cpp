@@ -9,6 +9,7 @@ SimulationExecutive::SimulationExecutive()
 	firstEvent = GrowEvent(currentDate);
 	eventQueue.push_back(firstEvent);
 	hasNextEvent = true;
+	isEndOfDay = false;
 }
 
 void SimulationExecutive::runSimulation()
@@ -26,6 +27,27 @@ void SimulationExecutive::runSimulation()
 		{
 			hasNextEvent = false;
 		}
+	}
+}
+
+void SimulationExecutive::runSimulationOneDay()
+{
+	while(hasNextEvent && !isEndOfDay)
+	{
+		isEndOfDay = false;
+		std::shared_ptr<Event>currentEvent = eventQueue.front();
+		if (currentEvent.date > currentDate)
+		{
+			endOfDay();
+			isEndOfDay = true;
+		}
+		currentEvent.ExecuteEvent();
+		eventQueue.pop();
+		if (eventQueue.size() == 0)
+		{
+			hasNextEvent = false;
+		}
+
 	}
 }
 
