@@ -1,13 +1,13 @@
 #include "Square.h"
-#include "GroundSquare.h"
+#include "GroundSubSquare.h"
 
-Square::Square(char newID)
+Square::Square()
 {
-	ID = newID;
+	
 	for(int i = 0; i < 9; i++)
 		for (int j = 0; j < 9; j++)
 		{
-			groundSquares[i][j] = GroundSquare(i * 10 + j, ID);
-			canopySquares[i][j] = CanopySquare(i * 10 + j, ID);
+			GroundSubSquares[i][j] = GroundSubSquare(i * 10 + j, ID);
+			CanopySubSquares[i][j] = CanopySubSquare(i * 10 + j, ID);
 		}
 }

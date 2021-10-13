@@ -142,11 +142,11 @@
     <ClInclude Include="BaseAnimal.h" />
     <ClInclude Include="BaseInsect.h" />
     <ClInclude Include="BaseTree.h" />
-    <ClInclude Include="CanopySquare.h" />
+    <ClInclude Include="CanopySubSquare.h" />
     <ClInclude Include="Date.h" />
     <ClInclude Include="Event.h" />
     <ClInclude Include="Fungus.h" />
-    <ClInclude Include="GroundSquare.h" />
+    <ClInclude Include="GroundSubSquare.h" />
     <ClInclude Include="GrowEvent.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Microclimate.h" />
@@ -159,9 +159,9 @@
     <ClInclude Include="Wound.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CanopySquare.cpp" />
+    <ClCompile Include="CanopySubSquare.cpp" />
     <ClCompile Include="Date.cpp" />
-    <ClCompile Include="GroundSquare.cpp" />
+    <ClCompile Include="GroundSubSquare.cpp" />
     <ClCompile Include="GrowEvent.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Map.cpp" />

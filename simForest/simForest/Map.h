@@ -6,7 +6,7 @@
 * This object is a grid of squares, which are themselves a grid of ground squares that can hold trees.
 */
 class Map {
-	Square bigGrid[10][10];
+	Square bigGrid[5][5];
 public:
 	Map();
 };

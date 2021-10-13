@@ -1,15 +1,15 @@
 #pragma once
-#include "GroundSquare.h"
-#include "CanopySquare.h"
+#include "GroundSubSquare.h"
+#include "CanopySubSquare.h"
 
 //Grid within a grid
 
 class Square {
 public:
+	Square();
 	Square(char ID);
-	char ID;
 
 private:
-	GroundSquare groundSquares[10][10];
-	CanopySquare canopySquares[10][10];
+	GroundSubSquare GroundSubSquares[10][10];
+	CanopySubSquare CanopySubSquares[10][10];
 };

@@ -4,7 +4,7 @@
 #include <memory>
 #include "Event.h"
 #include "Wound.h"
-#include "GroundSquare.h"
+#include "GroundSubSquare.h"
 
 /*
 *Base class from which all of the other trees will be inherited
@@ -119,7 +119,7 @@ public:
 		storedMa = newMa;
 	}
 
-	void setLocation(GroundSquare newLocation) {
+	void setLocation(GroundSubSquare newLocation) {
 		location = newLocation;
 	}
 
@@ -148,7 +148,7 @@ protected:
 	double storedN; // amount of nitrogen
 	double storedPh; // amount of phosphorous
 	double storedMa; // amount of magnesium
-	GroundSquare location;
+	GroundSubSquare location;
 	GrowthStage growthStage;
 	TreeType treeType;
 
@@ -160,7 +160,7 @@ protected:
 	void die(); //called when health meets a threshold or when disaster falls
 	void attractInsects(); //some inherited tree types can attract insects to defend themselves from insect attack
 	void warnOfDanger(); // can communicate danger such as insects 
-	void pullWaterFromEarth(GroundSquare square);
+	void pullWaterFromEarth(GroundSubSquare square);
 	void dropLeaves(); //deciduous only, should be its own event.
 	void needWater();
 	void needNutrients(std::string nutrient, double amount);

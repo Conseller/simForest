@@ -4,11 +4,12 @@
 
 Map::Map()
 {
-	for (int i = 0; i < 9; i++)
+	for (int i = 0; i < 4; i++)
 	{
-		for (int j = 0; j < 9; j++)
+		for (int j = 0; j < 4; j++)
 		{
-			bigGrid[i][j] = Square(i+j);
+			char ID = 65 + i + j;
+			bigGrid[i][j] = Square(ID);
 		}
 	}
 }

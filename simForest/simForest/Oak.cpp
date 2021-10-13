@@ -1,5 +1,5 @@
 #include "Oak.h"
-#include "GroundSquare.h"
+#include "GroundSubSquare.h"
 #include "BaseTree.h"
 
 Oak::Oak()
@@ -18,7 +18,7 @@ Oak::Oak()
 }
 
 
-Oak::Oak(GroundSquare location)
+Oak::Oak(GroundSubSquare location)
     :location(location)
 {
 	age = 250;

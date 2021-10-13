@@ -8,15 +8,15 @@
 */
 
 
-class CanopySquare
+class CanopySubSquare
 {
 public:
 	int ID;
 	char squareID;
 
-	CanopySquare();
-	CanopySquare(std::shared_ptr<BaseTree> thisSquaresTree);
-	CanopySquare(int ID, char squareID);
+	CanopySubSquare();
+	CanopySubSquare(std::shared_ptr<BaseTree> thisSquaresTree);
+	CanopySubSquare(int ID, char squareID);
 
 protected:
 	std::shared_ptr<BaseTree> mainTree;

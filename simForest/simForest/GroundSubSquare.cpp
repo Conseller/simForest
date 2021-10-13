@@ -1,12 +1,12 @@
-#include "Groundsquare.h"
+#include "GroundSubSquare.h"
 
-GroundSquare::GroundSquare()
+GroundSubSquare::GroundSubSquare()
 {
 	ID = 1;
 	squareID = 'A';
 }
 
-GroundSquare::GroundSquare(std::shared_ptr<BaseTree> thisSquaresTree)
+GroundSubSquare::GroundSubSquare(std::shared_ptr<BaseTree> thisSquaresTree)
 {
 	ID = 1;
 	squareID = 'A';
@@ -14,7 +14,7 @@ GroundSquare::GroundSquare(std::shared_ptr<BaseTree> thisSquaresTree)
 	growingTree = nullptr;
 }
 
-GroundSquare::GroundSquare(int newID, char newSquareID)
+GroundSubSquare::GroundSubSquare(int newID, char newSquareID)
 {
 	ID = newID;
 	squareID = newSquareID;

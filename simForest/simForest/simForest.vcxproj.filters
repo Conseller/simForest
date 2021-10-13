@@ -24,7 +24,7 @@
     <ClInclude Include="BaseTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CanopySquare.h">
+    <ClInclude Include="CanopySubSquare.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Date.h">
@@ -36,7 +36,7 @@
     <ClInclude Include="Fungus.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GroundSquare.h">
+    <ClInclude Include="GroundSubSquare.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Map.h">
@@ -92,7 +92,7 @@
     <ClCompile Include="Map.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GroundSquare.cpp">
+    <ClCompile Include="GroundSubSquare.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Square.cpp">
@@ -101,7 +101,7 @@
     <ClCompile Include="OutputEvent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CanopySquare.cpp">
+    <ClCompile Include="CanopySubSquare.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

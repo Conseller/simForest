@@ -1,6 +1,6 @@
 #pragma once
 #include "BaseTree.h"
-#include "GroundSquare.h"
+#include "GroundSubSquare.h"
 
 /*
 * Inherited BaseTree
@@ -10,5 +10,5 @@ class Oak : public BaseTree
 {
 public:
 	Oak();
-	Oak(GroundSquare location);
+	Oak(GroundSubSquare location);
 };

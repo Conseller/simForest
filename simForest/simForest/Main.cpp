@@ -1,7 +1,7 @@
 #include "SimulationExecutive.h"
 #include "Event.h"
 #include "Date.h"
-#include "GroundSquare.h"
+#include "GroundSubSquare.h"
 #include "Oak.h"
 #include "BaseTree.h"
 #include "GrowEvent.h"
@@ -13,7 +13,7 @@
 
 int main(int argc, char** argv)
 {
-	GroundSquare firstTreeLocation(1, 'A');
+	GroundSubSquare firstTreeLocation(1, 'A');
 	Oak testTree(firstTreeLocation);
 	SimulationExecutive simExec;
 

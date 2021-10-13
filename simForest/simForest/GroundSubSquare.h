@@ -10,15 +10,15 @@
 
 class BaseTree;
 
-class GroundSquare 
+class GroundSubSquare 
 {
 public:
 	int ID;
 	char squareID;
 
-	GroundSquare();
-	GroundSquare(std::shared_ptr<BaseTree> thisSquaresTree);
-	GroundSquare(int ID, char squareID);
+	GroundSubSquare();
+	GroundSubSquare(std::shared_ptr<BaseTree> thisSquaresTree);
+	GroundSubSquare(int ID, char squareID);
 	
 protected: 
 	std::shared_ptr<BaseTree> mainTree;
