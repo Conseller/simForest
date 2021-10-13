@@ -9,7 +9,7 @@
 */
 
 
-class outputEvent : public Event
+class OutputEvent : public Event
 {
 	std::vector<std::shared_ptr<BaseTree>> allTheTreesPointer;
 	std::vector<BaseTree> allTheTrees;
