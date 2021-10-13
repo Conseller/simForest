@@ -3,6 +3,7 @@
 #include "Event.h"
 #include "Date.h"
 #include <memory>
+#include <iostream>
 
 /*
 * Does all the work of the simulation, holds the event queue that makes the things happen
@@ -17,6 +18,7 @@ class SimulationExecutive {
 	bool isEndOfDay;
 	void endOfDay(); //changes weather, date, things that change from day to day but are not events
 	Date getSimulationDate();
+	void Continue();
 
 public:
 	SimulationExecutive();

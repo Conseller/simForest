@@ -40,6 +40,7 @@ void SimulationExecutive::runSimulationOneDay()
 		{
 			endOfDay();
 			isEndOfDay = true;
+			Continue();
 		}
 		currentEvent.ExecuteEvent();
 		eventQueue.pop();
@@ -49,6 +50,13 @@ void SimulationExecutive::runSimulationOneDay()
 		}
 
 	}
+}
+
+void SimulationExecutive::Continue()
+{
+	std::cout << "Press any Key to Continue" << std::endl;
+	std:getchar();
+	return;
 }
 
 void SimulationExecutive::endOfDay()
