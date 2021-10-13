@@ -5,14 +5,14 @@ GroundSquare::GroundSquare()
 	ID = 1;
 	squareID = 'A';
 }
-/*
-GroundSquare::GroundSquare(BaseTree* thisSquaresTree)
+
+GroundSquare::GroundSquare(std::shared_ptr<BaseTree> thisSquaresTree)
 {
 	ID = 1;
-	squareID = A;
+	squareID = 'A';
 	mainTree = thisSquaresTree;
 	growingTree = nullptr;
-}*/
+}
 
 GroundSquare::GroundSquare(int newID, char newSquareID)
 {
