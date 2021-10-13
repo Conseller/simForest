@@ -159,6 +159,7 @@
     <ClInclude Include="Wound.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CanopySquare.cpp" />
     <ClCompile Include="Date.cpp" />
     <ClCompile Include="GroundSquare.cpp" />
     <ClCompile Include="GrowEvent.cpp" />
