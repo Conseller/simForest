@@ -1,6 +1,7 @@
 #pragma once
 
 #include<vector>
+#include<string>
 #include "BaseTree.h"
 #include "Map.h"
 
@@ -12,6 +13,7 @@
 class Weather {
 public:
 	Weather();
+	std::string todaysWeather;
 
 private:
 	double temperature;
@@ -22,5 +24,6 @@ private:
 
 
 	void Rain(Map map, double howMuch);
+	void describeWeather();
 	void windStorm(std::vector<BaseTree> allTheTrees, double windSpeed);
 };
