@@ -10,11 +10,13 @@
 
 class GrowEvent : public Event
 {
-	std::vector<std::shared_ptr<BaseTree>> allTheTreesPointer;
-	std::vector<BaseTree> allTheTrees;
+	std::vector<std::shared_ptr<BaseTree>> allTheTrees;
+	//std::vector<BaseTree> allTheTrees;
+	Date date;
 public:
-	const double GROWTH_RATE = 1.0012526;	
+	const double GROWTH_RATE = 1.0012526;
 	GrowEvent(std::vector<std::shared_ptr<BaseTree>> allTheTrees);
+	GrowEvent(Date dateOfGrowth);
 	void ExecuteEvent(Date date, int weight, BaseTree* effectedTree);
     void ExecuteEvent();
 };

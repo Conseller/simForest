@@ -52,9 +52,17 @@ bool Date::operator< (const Date& d)
 	}
 }
 
-bool Date::operator= (const Date& d)
+bool Date::operator== (const Date& d)
 {
 	if ((this->Day = d.Day) && (this->Month = d.Month) && (this->Year = d.Year))
+	{
+		return true;
+	}
+}
+
+bool Date::operator> (const Date& d)
+{
+	if (this->Day < d.Day && this->Month < d.Month && this->Year < d.Year)
 	{
 		return true;
 	}

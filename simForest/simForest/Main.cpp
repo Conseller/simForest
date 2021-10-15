@@ -5,6 +5,7 @@
 #include "Oak.h"
 #include "BaseTree.h"
 #include "GrowEvent.h"
+#include "OutputEvent.h"
 #include "Map.h"
 #include <vector>
 
@@ -17,14 +18,13 @@ int main(int argc, char** argv)
 	Oak testTree(firstTreeLocation);
 	SimulationExecutive simExec;
 
-	std::vector<BaseTree> allTheTrees;
-	std::vector<BaseTree>& allTheTreesReference = allTheTrees;
-	allTheTrees.push_back(testTree);
+	std::vector<std::shared_ptr<BaseTree>> allTheTrees;
+
 	
 	Map map;
-	GrowEvent firstDayGrow(allTheTreesReference);
-	//OutputEvent firstDayOutput
+	GrowEvent firstDayGrow(allTheTrees);
+	OutputEvent firstDayOutput;
 	simExec.addEvent(firstDayGrow);
-	//SimulationExecutive.addEvent
+	simExec.addEvent(firstDayOutput);
 	simExec.runSimulation();
 }

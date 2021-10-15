@@ -78,8 +78,6 @@ public:
 		return storedN;
 	}
 
-	
-
 	void setName(std::string newName) {
 		name = newName;
 	}

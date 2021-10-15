@@ -11,8 +11,6 @@ class Date {
 	int Month;
 	int Year;
 	enum season{spring, summer, fall, winter};
-	bool operator<(const Date& d);
-	bool operator=(const Date& d);
 
 	Weather todaysWeather;
 	
@@ -21,4 +19,7 @@ class Date {
 public:
 	Date();
 	Date AdvanceDate(Date currentDate);
+	bool operator<(const Date& d);
+	bool operator==(const Date& d);
+	bool operator>(const Date& d);
 };

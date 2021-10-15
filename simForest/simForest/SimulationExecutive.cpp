@@ -1,13 +1,11 @@
 #include "SimulationExecutive.h"
-#include "Date.h"
-#include "Event.h"
 
 
 SimulationExecutive::SimulationExecutive()
 {
-	currentDate = Date();
+	currentDate = getSimulationDate();
 	firstEvent = GrowEvent(currentDate);
-	eventQueue.push_back(firstEvent);
+	eventQueue.push(firstEvent);
 	hasNextEvent = true;
 	isEndOfDay = false;
 }
@@ -16,7 +14,7 @@ void SimulationExecutive::runSimulation()
 {
 	while (hasNextEvent)
 	{
-		std::shared_ptr<Event>currentEvent = eventQueue.front();
+		Event currentEvent = eventQueue.front();
 		if (currentEvent.date > currentDate)
 		{
 			endOfDay();
@@ -35,7 +33,7 @@ void SimulationExecutive::runSimulationOneDay()
 	while(hasNextEvent && !isEndOfDay)
 	{
 		isEndOfDay = false;
-		std::shared_ptr<Event>currentEvent = eventQueue.front();
+		Event currentEvent = eventQueue.front();
 		if (currentEvent.date > currentDate)
 		{
 			endOfDay();
