@@ -170,6 +170,7 @@
     <ClCompile Include="SimulationExecutive.cpp" />
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="Weather.cpp" />
+    <ClCompile Include="Wound.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

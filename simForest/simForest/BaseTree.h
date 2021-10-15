@@ -12,7 +12,7 @@
 
 class BaseTree {
 public:
-	enum GrowthStage { sprout, seedling, sapling, juvenile, adult }; //effects behavior for growth rate, nutrient needs etc
+	enum GrowthStage { sprout, seedling, sapling, juvenile, adult, stump }; //effects behavior for growth rate, nutrient needs etc
 	enum TreeType { deciduous, coniferous }; //effects behavior for reproduction, overwintering etc. 
 	enum TreeSpecies {elm, oak, ash, fir, beech, birch, willow};
 	
@@ -133,9 +133,8 @@ public:
 #pragma endregion
 
 
-	void addWounds(std::string woundType); //if the tree gets damaged or has an infestation
+	void addWound(std::string wound); //if the tree gets damaged or has an infestation
 	void addConnections(std::shared_ptr<BaseTree> connection); //Trees are connected to their immediate neighbours and can communicate with each other and share resources
-
 
 protected:
 	float symmetry; // value between 0.0 and 1.0 indicating how symmetrical is the tree with 0.0 being the least. 
@@ -157,7 +156,6 @@ protected:
 
 	//Event ReproduceEvent;
 
-	void die(); //called when health meets a threshold or when disaster falls
 	void attractInsects(); //some inherited tree types can attract insects to defend themselves from insect attack
 	void warnOfDanger(); // can communicate danger such as insects 
 	void pullWaterFromEarth(GroundSubSquare square);

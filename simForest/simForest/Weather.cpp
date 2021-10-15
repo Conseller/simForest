@@ -1,6 +1,5 @@
 #include "Weather.h"
-#include "Terrain.h"
-#include <iostream>
+#include "Wound.h"
 
 
 Weather::Weather() {
@@ -20,30 +19,30 @@ void Weather::Rain(Map map, double howMuch)
 	}
 }
 
-void Weather::windStorm(std::vector<BaseTree> allTheTrees, double windspeed)
+void Weather::windStorm(std::vector<std::shared_ptr<BaseTree>> allTheTrees, double windspeed)
 {
-	for(BaseTree tree : allTheTrees)
+	for(std::shared_ptr<BaseTree> tree : allTheTrees)
 	{
-		if (windspeed > 20 && tree.symmetry < 70)
+		if (windspeed > 20 && tree->getSymmetry() < 70)
 		{
-			tree.addWound("broken limb")
+			tree->addWound("BrokenLimb");
 		};
-		if (windspeed > 40 && tree.symmetry < 80)
+		if (windspeed > 40 && tree->getSymmetry() < 80)
 		{
-			tree.addWound("broken limb")
+			tree->addWound("BrokenLimb");
 		};
-		if (windspeed > 60 && tree.symmetry < 90)
+		if (windspeed > 60 && tree->getSymmetry() < 90)
 		{
-			tree.addWound("broken limb")
+			tree->addWound("BrokenLimb");
 		};
-		if (windspeed > 80 && tree.symmetry < 95)
+		if (windspeed > 80 && tree->getSymmetry() < 95)
 		{
-			tree.addWound("broken limb")
+			tree->addWound("BrokenLimb");
 		};
 
-		if (windspeed > 120 && tree.symmetry < 95)
+		if (windspeed > 120 && tree->getSymmetry() < 80)
 		{
-			tree.Die();//gets blown over if it fails a roll
+			tree->die();//gets blown over if it fails a roll
 		};
 
 	}

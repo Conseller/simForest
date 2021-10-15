@@ -8,6 +8,7 @@ class Square {
 public:
 	Square();
 	Square(char ID);
+	char ID;
 
 private:
 	GroundSubSquare GroundSubSquares[10][10];
