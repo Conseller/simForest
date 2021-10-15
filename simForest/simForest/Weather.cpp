@@ -9,14 +9,14 @@ Weather::Weather() {
 }
 
 
-
+/*
 void Weather::Rain(Square square, double howMuch)
 {
-	for(GroundSubSquare subSquare : square.)//needs fixed
+	for(GroundSubSquare subSquare : square)//needs fixed
 	{
 		subSquare.terrain.addWater(howMuch);
 	}
-}
+}*/
 
 std::string Weather::describeWeather()
 {
