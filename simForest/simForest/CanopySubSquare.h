@@ -2,6 +2,7 @@
 
 #include "Square.h"
 #include "Microclimate.h"
+#include "BaseTree.h"
 #include <memory>
 /*
 *Represents the space immediately above the ground square with the same ID. Indicates how much of the square is covered by tree canopy

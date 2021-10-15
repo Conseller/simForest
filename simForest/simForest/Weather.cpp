@@ -1,5 +1,4 @@
 #include "Weather.h"
-#include "Wound.h"
 
 
 Weather::Weather() {
@@ -11,12 +10,17 @@ Weather::Weather() {
 
 
 
-void Weather::Rain(Map map, double howMuch)
+void Weather::Rain(Square square, double howMuch)
 {
-	for(groundSubSquare square : map)//needs fixed
+	for(GroundSubSquare subSquare : square.)//needs fixed
 	{
-		square.terrain.water = square.terrain.water + howMuch;
+		subSquare.terrain.addWater(howMuch);
 	}
+}
+
+std::string Weather::describeWeather()
+{
+	return "it's a beautiful day";
 }
 
 void Weather::windStorm(std::vector<std::shared_ptr<BaseTree>> allTheTrees, double windspeed)

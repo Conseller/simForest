@@ -3,7 +3,7 @@
 #include "BaseTree.h"
 
 Oak::Oak()
-    :location(1, 'A')
+    //:location(1, 'A')
 {
 	setAge(250);
 	symmetry = 1.0;
@@ -19,7 +19,7 @@ Oak::Oak()
 
 
 Oak::Oak(GroundSubSquare location)
-    :location(location)
+    //:location(location)
 {
 	age = 250;
 	symmetry = 1.0;

@@ -15,15 +15,16 @@ class GroundSubSquare
 public:
 	int ID;
 	char squareID;
+	Terrain terrain;
 
 	GroundSubSquare();
 	GroundSubSquare(std::shared_ptr<BaseTree> thisSquaresTree);
 	GroundSubSquare(int ID, char squareID);
+
 	
 protected: 
 	std::shared_ptr<BaseTree> mainTree;
 	std::shared_ptr<BaseTree> growingTree;
-	Terrain terrain;
 	//int acorns;
 
 };

@@ -168,6 +168,7 @@
     <ClCompile Include="Oak.cpp" />
     <ClCompile Include="OutputEvent.cpp" />
     <ClCompile Include="SimulationExecutive.cpp" />
+    <ClCompile Include="Terrain.cpp" />
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="Weather.cpp" />
     <ClCompile Include="Wound.cpp" />

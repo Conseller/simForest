@@ -25,8 +25,7 @@ private:
 	enum WindDirection{N,E,S,W,NE,NW,SE,SW};
 	WindDirection todaysWind;
 
-
-	void Rain(Map map, double howMuch);
+	void Rain(Square square, double howMuch);
 	std::string describeWeather();
-	void windStorm(std::vector<std::shared_ptr<BaseTree>> allTheTrees, double windSpeed);
+	void windStorm(std::vector<std::shared_ptr<BaseTree>> allTheTrees, double windspeed);
 };

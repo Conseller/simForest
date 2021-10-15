@@ -22,6 +22,7 @@ public:
 
 	std::string name;
 
+	void die();
 	void grow(float sun, double water);
 
 #pragma region Getters and Setters
