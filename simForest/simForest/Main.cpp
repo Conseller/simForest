@@ -27,4 +27,5 @@ int main(int argc, char** argv)
 	simExec.addEvent(firstDayGrow);
 	simExec.addEvent(firstDayOutput);
 	simExec.runSimulation();
+	return 0;
 }
