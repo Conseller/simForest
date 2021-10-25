@@ -1,6 +1,5 @@
 #pragma once
 
-#include "Square.h"
 #include "Microclimate.h"
 #include "BaseTree.h"
 
@@ -21,7 +20,6 @@ public:
 	CanopySubSquare(int ID, char squareID);
 
 protected:
-	std::shared_ptr<BaseTree> mainTree;
 	float sunCoverage; // sun coverage = symmetry * modifier for tree size
 	Microclimate microclimate;
 	std::shared_ptr<BaseTree> mainTree;

@@ -27,5 +27,5 @@ private:
 
 	void Rain(Square square, double howMuch);
 	std::string describeWeather();
-	void windStorm(std::vector<std::shared_ptr<BaseTree>> allTheTrees, double windspeed);
+	void windStorm(std::vector<std::shared_ptr<BaseTree>>& allTheTrees, double windspeed);
 };

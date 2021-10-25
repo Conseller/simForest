@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Terrain.h"
-#include "Square.h"
 #include <memory>
 
 /*

@@ -1,4 +1,5 @@
 #include "Date.h"
+#include "Weather.h"
 
 
 Date::Date()
@@ -6,7 +7,7 @@ Date::Date()
 	Day = 20;
 	Month = 3;
 	Year = 1912;
-	todaysWeather = Weather();
+	todaysWeather = new Weather();
 }
 
 Date Date::AdvanceDate(Date currentDate)

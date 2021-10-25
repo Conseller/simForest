@@ -1,5 +1,11 @@
 #pragma once
+
+#include <utility>
+#include <algorithm>
+
 #include "Date.h"
+
+using namespace std::rel_ops;
 
 /*
 * The mitochondria of the simulation. Events drive time forward in the simulation and control the behavior of the trees and other objects. 

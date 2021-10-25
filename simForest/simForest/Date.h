@@ -1,19 +1,21 @@
 #pragma once
-#include "Weather.h"
+// #include "Weather.h"
 
 /*
 * Represents the date, rolls over realistically from month to month and year to year. Keeps track of time passed in simulation
 */
 
+class Weather;
 
 class Date {
 	int Day;
 	int Month;
 	int Year;
+
 	enum season{spring, summer, fall, winter};
 
-	Weather todaysWeather;
-	
+	Weather* todaysWeather;
+
 
 
 public:

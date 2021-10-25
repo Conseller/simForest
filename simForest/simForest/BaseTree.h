@@ -16,8 +16,8 @@ public:
 	enum TreeType { deciduous, coniferous }; //effects behavior for reproduction, overwintering etc. 
 	enum TreeSpecies {elm, oak, ash, fir, beech, birch, willow};
 	
-	GrowthStage growthStage;
-	TreeType treeType;
+	// GrowthStage growthStage;
+	// TreeType treeType;
 	TreeSpecies treeSpecies;
 
 	std::string name;
@@ -146,6 +146,7 @@ protected:
 	double storedN; // amount of nitrogen
 	double storedPh; // amount of phosphorous
 	double storedMa; // amount of magnesium
+
 	GroundSubSquare location;
 	GrowthStage growthStage;
 	TreeType treeType;
@@ -166,11 +167,3 @@ protected:
 
 
 };
-
-void BaseTree::addConnections(std::shared_ptr<BaseTree> connection)
-{ 
-	connections.push_back(connection); //add connected tree pointer to this.connections, what the problem is
-	std::shared_ptr<BaseTree> thisTreePointer = std::make_shared<BaseTree>(this);
-	connection->addConnections(thisTreePointer); //add this tree to the connections of the tree that's being connected to
-	this->connectedness++; 
-}
