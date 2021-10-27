@@ -45,7 +45,7 @@ public:
 	double getHeight() {
 		return height;
 	}
-	std::vector<std::shared_ptr<BaseTree>> getConnections() {
+	std::vector<BaseTree*> getConnections() {
 		return connections;
 	}
 	double getWater() {
@@ -133,7 +133,7 @@ public:
 
 
 	void addWound(std::string wound); //if the tree gets damaged or has an infestation
-	void addConnections(std::shared_ptr<BaseTree> connection); //Trees are connected to their immediate neighbours and can communicate with each other and share resources
+	void addConnections(BaseTree* connection); //Trees are connected to their immediate neighbours and can communicate with each other and share resources
 
 protected:
 	float symmetry; // value between 0.0 and 1.0 indicating how symmetrical is the tree with 0.0 being the least. 
@@ -152,7 +152,7 @@ protected:
 	TreeType treeType;
 	TreeSpecies treeSpecies;
 
-	std::vector<std::shared_ptr<BaseTree>> connections;
+	std::vector<BaseTree*> connections;
 	std::vector<Wound> wounds;
 
 	//Event ReproduceEvent;

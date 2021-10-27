@@ -23,9 +23,9 @@ Event::Event(Date eventDate, int eventWeight)
 
 bool Event::operator< (const Event& e)
 {
-	Date* d = &simExec.getSimulationDate();
+	Date d = SimulationExecutive::getSimExec()->getSimulationDate();
 
-	if ( (e.date ::< *d) && (e.date.Month < d->Month) && (e.date.Year < d->Year && (e.weight < this->weight))
+	if ( (e.date < d)  && (e.weight < this->weight))
 	{
 		return true;
 	}

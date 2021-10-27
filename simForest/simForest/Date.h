@@ -25,7 +25,7 @@ public:
 
 	Date();
 	Date AdvanceDate(Date currentDate);
-	bool operator<(const Date& d);
-	bool operator==(const Date& d);
-	bool operator>(const Date& d);
+	bool operator<(const Date& d) const;
+	bool operator==(const Date& d) const;
+	bool operator>(const Date& d) const;
 };

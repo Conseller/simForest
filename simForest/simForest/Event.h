@@ -3,10 +3,6 @@
 #include <utility>
 #include <algorithm>
 #include "Date.h"
-#include "SimulationExecutive.h"
-
-extern SimulationExecutive simExec;
-
 
 
 using namespace std::rel_ops;

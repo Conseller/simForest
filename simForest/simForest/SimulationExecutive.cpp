@@ -4,6 +4,9 @@
 #include "SimulationExecutive.h"
 
 
+SimulationExecutive* SimulationExecutive::thePtr = nullptr;
+
+
 SimulationExecutive::SimulationExecutive()
 {
 	currentDate = getSimulationDate();

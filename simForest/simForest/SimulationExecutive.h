@@ -1,18 +1,33 @@
 #pragma once
+#include <iostream>
+#include <memory>
+#include <queue>
+
+#include "Date.h"
 #include "Event.h"
 #include "GrowEvent.h"
-#include "Date.h"
-#include "Date.h"
-#include "Event.h"
-#include <memory>
-#include <iostream>
-#include <queue>
+
 
 /*
 * Does all the work of the simulation, holds the event queue that makes the things happen
 */
 
 class SimulationExecutive {
+
+private:
+    static SimulationExecutive* thePtr;
+
+public:
+    static SimulationExecutive* getSimExec()
+    {
+        if (thePtr == nullptr) {
+            thePtr = new SimulationExecutive();
+        }
+
+        return thePtr;
+    }
+
+private:
 
 	std::queue<Event*> eventQueue; //Event Queue holds the Events to be executed.
 	Event firstEvent;//Event that starts the simulation

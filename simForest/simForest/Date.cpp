@@ -45,7 +45,7 @@ Date Date::AdvanceDate(Date currentDate)
 	return currentDate;
 }
 
-bool Date::operator< (const Date& d)
+bool Date::operator< (const Date& d) const
 {
 	if (this->Day < d.Day && this->Month < d.Month && this->Year < d.Year)
 	{
@@ -53,7 +53,7 @@ bool Date::operator< (const Date& d)
 	}
 }
 
-bool Date::operator== (const Date& d)
+bool Date::operator== (const Date& d) const
 {
 	if ((this->Day == d.Day) && (this->Month == d.Month) && (this->Year == d.Year))
 	{
@@ -61,7 +61,7 @@ bool Date::operator== (const Date& d)
 	}
 }
 
-bool Date::operator> (const Date& d)
+bool Date::operator> (const Date& d) const
 {
 	if (this->Day < d.Day && this->Month < d.Month && this->Year < d.Year)
 	{
