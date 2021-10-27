@@ -2,6 +2,7 @@
 #include "GroundSubSquare.h"
 #include "CanopySubSquare.h"
 #include <iostream>
+#include <array>
 
 //Grid within a grid
 
@@ -11,8 +12,8 @@ public:
 	Square(char ID);
 	char ID;
 
-	GroundSubSquare GroundSubSquares[10][10];
-	CanopySubSquare CanopySubSquares[10][10];
+	std::array<std::array<GroundSubSquare, 9>, 9> GroundSubSquares;
+	std::array<std::array<CanopySubSquare, 9>, 9> CanopySubSquares;
 
 private:
 	
