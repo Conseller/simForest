@@ -12,12 +12,12 @@
 
 class BaseTree {
 public:
-	enum GrowthStage { sprout, seedling, sapling, juvenile, adult, stump }; //effects behavior for growth rate, nutrient needs etc
-	enum TreeType { deciduous, coniferous }; //effects behavior for reproduction, overwintering etc. 
-	enum TreeSpecies {elm, oak, ash, fir, beech, birch, willow};
+	enum GrowthStage { SPROUT, SEEDLING, SAPLING, JUVENILE, ADULT, STUMP }; //effects behavior for growth rate, nutrient needs etc
+	enum TreeType { DECIDUOUS, CONIFEROUS }; //effects behavior for reproduction, overwintering etc. 
+	enum TreeSpecies {ELM, OAK, ASH, FIR, BEECH, BIRCH, WILLOW};
 	
-	// GrowthStage growthStage;
-	// TreeType treeType;
+	GrowthStage growthStage;
+	TreeType treeType;
 	TreeSpecies treeSpecies;
 
 	std::string name;

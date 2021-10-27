@@ -6,6 +6,7 @@
 extern SimulationExecutive simExec;
 
 #include "Date.h"
+#include "SimulationExecutive.h"
 
 using namespace std::rel_ops;
 

@@ -3,7 +3,7 @@
 
 class Wound {
 public:
-	//enum WoundType { BrokenLimb, RootRot };
+	//enum WoundType { BROKENLIMB, ROOTROT, INFESTATION };
 	//WoundType BrokenLimb;
 	std::string WoundType;
 

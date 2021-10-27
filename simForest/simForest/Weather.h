@@ -17,12 +17,12 @@ class Weather {
 public:
 	Weather();
 	std::string todaysWeather;
+	enum WindDirection { N, E, S, W, NE, NW, SE, SW };
 
 private:
 	double temperature;
 	double humidity;
 	double windspeed;
-	enum WindDirection{N,E,S,W,NE,NW,SE,SW};
 	WindDirection todaysWind;
 
 	void Rain(Square square, double howMuch);
