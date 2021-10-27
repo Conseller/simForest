@@ -16,9 +16,9 @@ public:
 	enum TreeType { DECIDUOUS, CONIFEROUS }; //effects behavior for reproduction, overwintering etc. 
 	enum TreeSpecies {ELM, OAK, ASH, FIR, BEECH, BIRCH, WILLOW};
 	
-	GrowthStage growthStage;
-	TreeType treeType;
-	TreeSpecies treeSpecies;
+	//GrowthStage growthStage;
+	//TreeType treeType;
+	//TreeSpecies treeSpecies;
 
 	std::string name;
 
@@ -150,6 +150,7 @@ protected:
 	GroundSubSquare location;
 	GrowthStage growthStage;
 	TreeType treeType;
+	TreeSpecies treeSpecies;
 
 	std::vector<std::shared_ptr<BaseTree>> connections;
 	std::vector<Wound> wounds;

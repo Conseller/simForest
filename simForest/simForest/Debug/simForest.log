@@ -1,153 +1,149 @@
 ﻿  CanopySubSquare.cpp
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(14,18): error C3646: 'CanopySubSquares': unknown override specifier
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(14,34): error C2143: syntax error: missing ',' before '['
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(14,42): error C2238: unexpected token(s) preceding ';'
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(150,14): error C2086: 'BaseTree::GrowthStage BaseTree::growthStage': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(151,11): error C2086: 'BaseTree::TreeType BaseTree::treeType': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,28): error C2086: 'std::shared_ptr<BaseTree> CanopySubSquare::mainTree': redefinition
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,35): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,28): error C2146: syntax error: missing ';' before identifier 'simExec'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(12,1): error C2504: 'Event': base class undefined
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(13,30): error C2065: 'BaseTree': undeclared identifier
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(13,19): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(13): message : see declaration of 'BaseTree'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(13,19): error C3203: 'shared_ptr': unspecialized class template can't be used as a template argument for template parameter '_Ty', expected a real type
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(18,40): error C2065: 'BaseTree': undeclared identifier
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(18,29): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(18): message : see declaration of 'BaseTree'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(18,29): error C3203: 'shared_ptr': unspecialized class template can't be used as a template argument for template parameter '_Ty', expected a real type
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(20,43): error C2061: syntax error: identifier 'BaseTree'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(17,13): error C2065: 'Event': undeclared identifier
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(17,19): error C2059: syntax error: '>'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(18,8): error C3646: 'firstEvent': unknown override specifier
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(18,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(27,46): error C2061: syntax error: identifier 'Event'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(28,46): error C2061: syntax error: identifier 'Event'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(32,16): error C2061: syntax error: identifier 'Event'
   Date.cpp
-C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(16,8): error C2061: syntax error: identifier 'Date'
-C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(17,7): error C2535: 'Event::Event(void)': member function already defined or declared
-C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(16): message : see declaration of 'Event::Event'
-C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(18,7): error C3646: 'date': unknown override specifier
-C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(18,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(20,34): error C2065: 'BaseTree': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(20,23): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(20): message : see declaration of 'BaseTree'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(24,18): error C2065: 'BaseTree': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(24,7): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(24): message : see declaration of 'BaseTree'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,18): error C2065: 'BaseTree': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,7): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27): message : see declaration of 'BaseTree'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,28): error C2086: 'std::shared_ptr CanopySubSquare::mainTree': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,18): error C3646: 'GroundSubSquares': unknown override specifier
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,34): error C2143: syntax error: missing ',' before '['
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,42): error C2238: unexpected token(s) preceding ';'
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(150,14): error C2086: 'BaseTree::GrowthStage BaseTree::growthStage': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(151,11): error C2086: 'BaseTree::TreeType BaseTree::treeType': redefinition
-  GroundSubSquare.cpp
-C:\Users\user\source\repos\simForest\simForest\simForest\Map.h(9,9): error C3646: 'bigGrid': unknown override specifier
-C:\Users\user\source\repos\simForest\simForest\simForest\Map.h(9,16): error C2143: syntax error: missing ',' before '['
-C:\Users\user\source\repos\simForest\simForest\simForest\Map.h(9,22): error C2238: unexpected token(s) preceding ';'
-C:\Users\user\source\repos\simForest\simForest\simForest\Weather.h(28,12): error C2061: syntax error: identifier 'Square'
-C:\Users\user\source\repos\simForest\simForest\simForest\Weather.h(30,45): error C2065: 'BaseTree': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\Weather.h(30,34): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
-C:\Users\user\source\repos\simForest\simForest\simForest\Weather.h(30): message : see declaration of 'BaseTree'
-C:\Users\user\source\repos\simForest\simForest\simForest\Weather.h(30,34): error C3203: 'shared_ptr': unspecialized class template can't be used as a template argument for template parameter '_Ty', expected a real type
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(121,19): error C2061: syntax error: identifier 'GroundSubSquare'
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(149,18): error C3646: 'location': unknown override specifier
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(149,26): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(150,14): error C2086: 'BaseTree::GrowthStage BaseTree::growthStage': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(151,11): error C2086: 'BaseTree::TreeType BaseTree::treeType': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(160,26): error C2061: syntax error: identifier 'GroundSubSquare'
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(122,3): error C2065: 'location': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(122,14): error C2065: 'newLocation': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,28): error C2086: 'std::shared_ptr<BaseTree> CanopySubSquare::mainTree': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,18): error C3646: 'GroundSubSquares': unknown override specifier
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,34): error C2143: syntax error: missing ',' before '['
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,42): error C2238: unexpected token(s) preceding ';'
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,35): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,28): error C2146: syntax error: missing ';' before identifier 'simExec'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(12,1): error C2504: 'Event': base class undefined
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(13,30): error C2065: 'BaseTree': undeclared identifier
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(13,19): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(13): message : see declaration of 'BaseTree'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(13,19): error C3203: 'shared_ptr': unspecialized class template can't be used as a template argument for template parameter '_Ty', expected a real type
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(18,40): error C2065: 'BaseTree': undeclared identifier
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(18,29): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(18): message : see declaration of 'BaseTree'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(18,29): error C3203: 'shared_ptr': unspecialized class template can't be used as a template argument for template parameter '_Ty', expected a real type
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(20,43): error C2061: syntax error: identifier 'BaseTree'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(17,13): error C2065: 'Event': undeclared identifier
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(17,19): error C2059: syntax error: '>'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(18,8): error C3646: 'firstEvent': unknown override specifier
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(18,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(27,46): error C2061: syntax error: identifier 'Event'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(28,46): error C2061: syntax error: identifier 'Event'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(32,16): error C2061: syntax error: identifier 'Event'
+  Event.cpp
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,35): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,28): error C2146: syntax error: missing ';' before identifier 'simExec'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(12,1): error C2504: 'Event': base class undefined
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(17,13): error C2065: 'Event': undeclared identifier
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(17,19): error C2059: syntax error: '>'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(18,8): error C3646: 'firstEvent': unknown override specifier
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(18,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(27,46): error C2061: syntax error: identifier 'Event'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(28,46): error C2061: syntax error: identifier 'Event'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(32,16): error C2061: syntax error: identifier 'Event'
   GrowEvent.cpp
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(20,34): error C2065: 'BaseTree': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(20,23): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(20): message : see declaration of 'BaseTree'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(24,18): error C2065: 'BaseTree': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(24,7): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(24): message : see declaration of 'BaseTree'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,18): error C2065: 'BaseTree': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,7): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27): message : see declaration of 'BaseTree'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,28): error C2086: 'std::shared_ptr CanopySubSquare::mainTree': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,18): error C3646: 'GroundSubSquares': unknown override specifier
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,34): error C2143: syntax error: missing ',' before '['
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,42): error C2238: unexpected token(s) preceding ';'
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(150,14): error C2086: 'BaseTree::GrowthStage BaseTree::growthStage': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(151,11): error C2086: 'BaseTree::TreeType BaseTree::treeType': redefinition
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,35): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,28): error C2146: syntax error: missing ';' before identifier 'simExec'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(17,13): error C2065: 'Event': undeclared identifier
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(17,19): error C2059: syntax error: '>'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(18,8): error C3646: 'firstEvent': unknown override specifier
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(18,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(27,46): error C2061: syntax error: identifier 'Event'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(28,46): error C2061: syntax error: identifier 'Event'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(32,16): error C2061: syntax error: identifier 'Event'
 C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.cpp(19,35): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
 C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.cpp(20,27): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
 C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.cpp(21,29): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
 C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.cpp(22,29): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   main.cpp
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(20,34): error C2065: 'BaseTree': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(20,23): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(20): message : see declaration of 'BaseTree'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(24,18): error C2065: 'BaseTree': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(24,7): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(24): message : see declaration of 'BaseTree'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,18): error C2065: 'BaseTree': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,7): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27): message : see declaration of 'BaseTree'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,28): error C2086: 'std::shared_ptr CanopySubSquare::mainTree': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,18): error C3646: 'GroundSubSquares': unknown override specifier
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,34): error C2143: syntax error: missing ',' before '['
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,42): error C2238: unexpected token(s) preceding ';'
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(150,14): error C2086: 'BaseTree::GrowthStage BaseTree::growthStage': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(151,11): error C2086: 'BaseTree::TreeType BaseTree::treeType': redefinition
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,35): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,28): error C2146: syntax error: missing ';' before identifier 'simExec'
+C:\Users\user\source\repos\simForest\simForest\simForest\main.cpp(19,22): error C2146: syntax error: missing ';' before identifier 'simExec'
   Map.cpp
-C:\Users\user\source\repos\simForest\simForest\simForest\Weather.h(28,12): error C2061: syntax error: identifier 'Square'
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(150,14): error C2086: 'BaseTree::GrowthStage BaseTree::growthStage': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(151,11): error C2086: 'BaseTree::TreeType BaseTree::treeType': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,28): error C2086: 'std::shared_ptr<BaseTree> CanopySubSquare::mainTree': redefinition
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,35): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,28): error C2146: syntax error: missing ';' before identifier 'simExec'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(12,1): error C2504: 'Event': base class undefined
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(17,13): error C2065: 'Event': undeclared identifier
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(17,19): error C2059: syntax error: '>'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(18,8): error C3646: 'firstEvent': unknown override specifier
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(18,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(27,46): error C2061: syntax error: identifier 'Event'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(28,46): error C2061: syntax error: identifier 'Event'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(32,16): error C2061: syntax error: identifier 'Event'
   Oak.cpp
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,28): error C2086: 'std::shared_ptr<BaseTree> CanopySubSquare::mainTree': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(150,14): error C2086: 'BaseTree::GrowthStage BaseTree::growthStage': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(151,11): error C2086: 'BaseTree::TreeType BaseTree::treeType': redefinition
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,35): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,28): error C2146: syntax error: missing ';' before identifier 'simExec'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(12,1): error C2504: 'Event': base class undefined
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(13,30): error C2065: 'BaseTree': undeclared identifier
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(13,19): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(13): message : see declaration of 'BaseTree'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(13,19): error C3203: 'shared_ptr': unspecialized class template can't be used as a template argument for template parameter '_Ty', expected a real type
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(18,40): error C2065: 'BaseTree': undeclared identifier
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(18,29): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(18): message : see declaration of 'BaseTree'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(18,29): error C3203: 'shared_ptr': unspecialized class template can't be used as a template argument for template parameter '_Ty', expected a real type
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(20,43): error C2061: syntax error: identifier 'BaseTree'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(17,13): error C2065: 'Event': undeclared identifier
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(17,19): error C2059: syntax error: '>'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(18,8): error C3646: 'firstEvent': unknown override specifier
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(18,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(27,46): error C2061: syntax error: identifier 'Event'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(28,46): error C2061: syntax error: identifier 'Event'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(32,16): error C2061: syntax error: identifier 'Event'
   OutputEvent.cpp
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(20,34): error C2065: 'BaseTree': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(20,23): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(20): message : see declaration of 'BaseTree'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(24,18): error C2065: 'BaseTree': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(24,7): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(24): message : see declaration of 'BaseTree'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,18): error C2065: 'BaseTree': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,7): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27): message : see declaration of 'BaseTree'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,28): error C2086: 'std::shared_ptr CanopySubSquare::mainTree': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,18): error C3646: 'GroundSubSquares': unknown override specifier
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,34): error C2143: syntax error: missing ',' before '['
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,42): error C2238: unexpected token(s) preceding ';'
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(150,14): error C2086: 'BaseTree::GrowthStage BaseTree::growthStage': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(151,11): error C2086: 'BaseTree::TreeType BaseTree::treeType': redefinition
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,35): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,28): error C2146: syntax error: missing ';' before identifier 'simExec'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(12,1): error C2504: 'Event': base class undefined
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(17,13): error C2065: 'Event': undeclared identifier
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(17,19): error C2059: syntax error: '>'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(18,8): error C3646: 'firstEvent': unknown override specifier
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(18,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(27,46): error C2061: syntax error: identifier 'Event'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(28,46): error C2061: syntax error: identifier 'Event'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(32,16): error C2061: syntax error: identifier 'Event'
+C:\Users\user\source\repos\simForest\simForest\simForest\OutputEvent.cpp(5,19): error C2027: use of undefined type 'Weather'
+C:\Users\user\source\repos\simForest\simForest\simForest\Date.h(8): message : see declaration of 'Weather'
   SimulationExecutive.cpp
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(20,34): error C2065: 'BaseTree': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(20,23): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(20): message : see declaration of 'BaseTree'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(24,18): error C2065: 'BaseTree': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(24,7): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(24): message : see declaration of 'BaseTree'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,18): error C2065: 'BaseTree': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,7): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27): message : see declaration of 'BaseTree'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,28): error C2086: 'std::shared_ptr CanopySubSquare::mainTree': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,18): error C3646: 'GroundSubSquares': unknown override specifier
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,34): error C2143: syntax error: missing ',' before '['
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,42): error C2238: unexpected token(s) preceding ';'
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(150,14): error C2086: 'BaseTree::GrowthStage BaseTree::growthStage': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(151,11): error C2086: 'BaseTree::TreeType BaseTree::treeType': redefinition
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,35): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,28): error C2146: syntax error: missing ';' before identifier 'simExec'
   Square.cpp
-C:\Users\user\source\repos\simForest\simForest\simForest\Map.h(9,9): error C3646: 'bigGrid': unknown override specifier
-C:\Users\user\source\repos\simForest\simForest\simForest\Map.h(9,16): error C2143: syntax error: missing ',' before '['
-C:\Users\user\source\repos\simForest\simForest\simForest\Map.h(9,22): error C2238: unexpected token(s) preceding ';'
-C:\Users\user\source\repos\simForest\simForest\simForest\Weather.h(28,12): error C2061: syntax error: identifier 'Square'
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(150,14): error C2086: 'BaseTree::GrowthStage BaseTree::growthStage': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(151,11): error C2086: 'BaseTree::TreeType BaseTree::treeType': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,28): error C2086: 'std::shared_ptr<BaseTree> CanopySubSquare::mainTree': redefinition
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,35): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,28): error C2146: syntax error: missing ';' before identifier 'simExec'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(12,1): error C2504: 'Event': base class undefined
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(17,13): error C2065: 'Event': undeclared identifier
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(17,19): error C2059: syntax error: '>'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(18,8): error C3646: 'firstEvent': unknown override specifier
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(18,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(27,46): error C2061: syntax error: identifier 'Event'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(28,46): error C2061: syntax error: identifier 'Event'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(32,16): error C2061: syntax error: identifier 'Event'
   Weather.cpp
-C:\Users\user\source\repos\simForest\simForest\simForest\Date.h(15,10): error C3646: 'todaysWeather': unknown override specifier
-C:\Users\user\source\repos\simForest\simForest\simForest\Date.h(15,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(20,34): error C2065: 'BaseTree': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(20,23): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(20): message : see declaration of 'BaseTree'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(24,18): error C2065: 'BaseTree': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(24,7): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(24): message : see declaration of 'BaseTree'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,18): error C2065: 'BaseTree': undeclared identifier
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,7): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27): message : see declaration of 'BaseTree'
-C:\Users\user\source\repos\simForest\simForest\simForest\CanopySubSquare.h(27,28): error C2086: 'std::shared_ptr CanopySubSquare::mainTree': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,18): error C3646: 'GroundSubSquares': unknown override specifier
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,34): error C2143: syntax error: missing ',' before '['
-C:\Users\user\source\repos\simForest\simForest\simForest\Square.h(13,42): error C2238: unexpected token(s) preceding ';'
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(150,14): error C2086: 'BaseTree::GrowthStage BaseTree::growthStage': redefinition
-C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.h(151,11): error C2086: 'BaseTree::TreeType BaseTree::treeType': redefinition
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,35): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(6,28): error C2146: syntax error: missing ';' before identifier 'simExec'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(12,1): error C2504: 'Event': base class undefined
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(13,30): error C2065: 'BaseTree': undeclared identifier
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(13,19): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(13): message : see declaration of 'BaseTree'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(13,19): error C3203: 'shared_ptr': unspecialized class template can't be used as a template argument for template parameter '_Ty', expected a real type
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(18,40): error C2065: 'BaseTree': undeclared identifier
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(18,29): error C2923: 'std::shared_ptr': 'BaseTree' is not a valid template type argument for parameter '_Ty'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(18): message : see declaration of 'BaseTree'
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(18,29): error C3203: 'shared_ptr': unspecialized class template can't be used as a template argument for template parameter '_Ty', expected a real type
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(20,43): error C2061: syntax error: identifier 'BaseTree'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(17,13): error C2065: 'Event': undeclared identifier
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(17,19): error C2059: syntax error: '>'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(18,8): error C3646: 'firstEvent': unknown override specifier
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(18,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(27,46): error C2061: syntax error: identifier 'Event'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(28,46): error C2061: syntax error: identifier 'Event'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.h(32,16): error C2061: syntax error: identifier 'Event'
+  Wound.cpp
   Generating Code...
