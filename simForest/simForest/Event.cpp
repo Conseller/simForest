@@ -23,9 +23,9 @@ Event::Event(Date eventDate, int eventWeight)
 
 bool Event::operator< (const Event& e)
 {
-	Date* d = simExec.getSimulationDate();
+	Date* d = &simExec.getSimulationDate();
 
-	if ( e.date.Day < d->Day && e.date.Month < d->Month && e.date.Year < d->Year)
+	if ( (e.date ::< *d) && (e.date.Month < d->Month) && (e.date.Year < d->Year && (e.weight < this->weight))
 	{
 		return true;
 	}
@@ -33,8 +33,8 @@ bool Event::operator< (const Event& e)
 
 bool Event::operator== (const Event& e)
 {
-	Date* d = simExec.getSimulationDate();
-	if ((e.date.Day == d->Day) && (e.date.Month == d->Month) && (e.date.Year == d->Year))
+	Date* d = &simExec.getSimulationDate();
+	if ((e.date == *d) && (e.date.Month == d->Month) && (e.date.Year == d->Year) && (e.weight == this->weight))
 	{
 		return true;
 	}
@@ -42,8 +42,8 @@ bool Event::operator== (const Event& e)
 
 bool Event::operator> (const Event& e)
 {
-	Date* d = simExec.getSimulationDate();
-	if (e.date.Day < d->Day && e.date.Month < d->Month && e.date.Year < d->Year)
+	Date* d = &simExec.getSimulationDate();
+	if ((e.date.Day > d->Day) || (e.date.Month > d->Month) || (e.date.Year > d->Year) && (e.weight > this->weight))
 	{
 		return true;
 	}
