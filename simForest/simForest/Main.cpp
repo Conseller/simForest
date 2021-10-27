@@ -14,7 +14,7 @@
 
 int main(int argc, char** argv)
 {
-	GroundSubSquare firstTreeLocation(1, 'A');
+	/*GroundSubSquare firstTreeLocation(1, 'A');
 	Oak testTree(firstTreeLocation);
 	SimulationExecutive simExec;
 
@@ -26,6 +26,6 @@ int main(int argc, char** argv)
 	OutputEvent firstDayOutput;
 	simExec.addEvent(firstDayGrow);
 	simExec.addEvent(firstDayOutput);
-	simExec.runSimulation();
+	simExec.runSimulation();*/
 	return 0;
 }
