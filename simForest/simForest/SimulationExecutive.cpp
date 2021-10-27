@@ -8,7 +8,8 @@ SimulationExecutive::SimulationExecutive()
 {
 	currentDate = getSimulationDate();
 	firstEvent = GrowEvent(currentDate);
-	eventQueue.push(firstEvent);
+	Event* firstEventPointer;
+	eventQueue.push(firstEventPointer);
 	hasNextEvent = true;
 	isEndOfDay = false;
 }
@@ -17,12 +18,12 @@ void SimulationExecutive::runSimulation()
 {
 	while (hasNextEvent)
 	{
-		Event currentEvent = eventQueue.front();
-		if (currentEvent.date > currentDate)
+		Event* currentEvent = eventQueue.front();
+		if (currentEvent->date > currentDate)
 		{
 			endOfDay();
 		}
-		currentEvent.ExecuteEvent();
+		currentEvent->ExecuteEvent();
 		eventQueue.pop();
 		if (eventQueue.size() == 0)
 		{
@@ -36,14 +37,14 @@ void SimulationExecutive::runSimulationOneDay()
 	while(hasNextEvent && !isEndOfDay)
 	{
 		isEndOfDay = false;
-		Event currentEvent = eventQueue.front();
-		if (currentEvent.date > currentDate)
+		Event* currentEvent = eventQueue.front();
+		if (currentEvent->date > currentDate)
 		{
 			endOfDay();
 			isEndOfDay = true;
 			Continue();
 		}
-		currentEvent.ExecuteEvent();
+		currentEvent->ExecuteEvent();
 		eventQueue.pop();
 		if (eventQueue.size() == 0)
 		{
@@ -66,7 +67,7 @@ void SimulationExecutive::endOfDay()
 	std::sort(eventQueue.front(), eventQueue.back());
 }
 
-void SimulationExecutive::addEvent(Event eventToAdd)
+void SimulationExecutive::addEvent(Event* eventToAdd)
 {
 	eventQueue.push(eventToAdd);
 }

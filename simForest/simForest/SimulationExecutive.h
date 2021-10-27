@@ -14,7 +14,7 @@
 
 class SimulationExecutive {
 
-	std::queue<Event> eventQueue; //Event Queue holds the Events to be executed.
+	std::queue<Event*> eventQueue; //Event Queue holds the Events to be executed.
 	Event firstEvent;//Event that starts the simulation
 	Date currentDate;
 	bool hasNextEvent;
@@ -29,5 +29,5 @@ public:
 	void runSimulation(); //start simulation
 	void runSimulationOneDay();// run simulation for one day and then stop
 	Date getSimulationDate();
-	void addEvent(Event eventToAdd); //add event to event queue
+	void addEvent(Event* eventToAdd); //add event to event queue
 };
