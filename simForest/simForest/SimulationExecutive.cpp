@@ -71,3 +71,8 @@ void SimulationExecutive::addEvent(Event* eventToAdd)
 {
 	eventQueue.push(eventToAdd);
 }
+
+Date SimulationExecutive::getSimulationDate()
+{
+	return currentDate;
+}

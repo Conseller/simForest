@@ -161,6 +161,7 @@
   <ItemGroup>
     <ClCompile Include="CanopySubSquare.cpp" />
     <ClCompile Include="Date.cpp" />
+    <ClCompile Include="Event.cpp" />
     <ClCompile Include="GroundSubSquare.cpp" />
     <ClCompile Include="GrowEvent.cpp" />
     <ClCompile Include="main.cpp" />

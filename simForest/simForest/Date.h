@@ -8,17 +8,21 @@
 class Weather;
 
 class Date {
-	int Day;
-	int Month;
-	int Year;
 
-	enum season{spring, summer, fall, winter};
+	
 
 	Weather* todaysWeather;
 
 
 
 public:
+	enum season { SPRING, SUMMER, FALL, WINTER };
+
+
+	int Day;
+	int Month;
+	int Year;
+
 	Date();
 	Date AdvanceDate(Date currentDate);
 	bool operator<(const Date& d);

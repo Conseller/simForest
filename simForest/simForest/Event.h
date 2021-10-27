@@ -3,6 +3,8 @@
 #include <utility>
 #include <algorithm>
 
+extern SimulationExecutive simExec;
+
 #include "Date.h"
 
 using namespace std::rel_ops;
@@ -19,8 +21,15 @@ class Event {
 
 public:
 	void ExecuteEvent();	
+	Event(Date startDate);
 	Event(Date eventDate, int eventWeight);
 	Event();
+
 	Date date;
 	int weight;
+
+
+	bool operator<(const Event& e);
+	bool operator==(const Event& e);
+	bool operator>(const Event& e);
 };
