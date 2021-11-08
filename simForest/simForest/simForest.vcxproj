@@ -156,9 +156,9 @@
     <ClInclude Include="Square.h" />
     <ClInclude Include="Terrain.h" />
     <ClInclude Include="Weather.h" />
-    <ClInclude Include="Wound.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BaseTree.cpp" />
     <ClCompile Include="CanopySubSquare.cpp" />
     <ClCompile Include="Date.cpp" />
     <ClCompile Include="Event.cpp" />
@@ -172,7 +172,6 @@
     <ClCompile Include="Terrain.cpp" />
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="Weather.cpp" />
-    <ClCompile Include="Wound.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,8 +1,15 @@
 #include "OutputEvent.h"
 
+/**
+*
+* Event that iterates through a vector of pointers to trees
+* and outputs to console for now, later to output to spreadsheet
+* 
+* @param allTheTreesPointer: a vector of pointers that each point to
+* an individual BaseTree object
+*/
 
-
-void OutputEvent::ExecuteEvent(std::vector<std::shared_ptr<BaseTree>> allTheTreesPointer, Weather todaysWeather)
+void OutputEvent::ExecuteEvent(std::vector<std::shared_ptr<BaseTree>> allTheTreesPointer)
 {
 	for(std::shared_ptr<BaseTree> tree : allTheTreesPointer)
 	{
@@ -18,8 +25,8 @@ void OutputEvent::ExecuteEvent(std::vector<std::shared_ptr<BaseTree>> allTheTree
 		std::cout << "Stored:  " << tree->getPh() << " Units of Phosphorous" << std::endl;
 		std::cout << "Stored:  " << tree->getMa() << " Units of Magnesium " << std::endl;
 		std::cout << tree->getName() << " is Connected to ";
-		std::vector<std::shared_ptr<BaseTree>> treeConnections = tree->getConnections();
-		for (std::shared_ptr<BaseTree> treePointer : treeConnections)
+		std::vector<BaseTree*> treeConnections = tree->getConnections();
+		for (BaseTree* treePointer : treeConnections)
 		{
 			std::cout << treePointer->getName() << std::endl;
 		}

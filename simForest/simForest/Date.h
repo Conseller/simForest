@@ -1,8 +1,11 @@
 #pragma once
 // #include "Weather.h"
 
-/*
-* Represents the date, rolls over realistically from month to month and year to year. Keeps track of time passed in simulation
+/**
+* 
+* Represents the date, rolls over realistically from month to month and year to year. Keeps track of time passed in the simulation.
+* Simulation begins on the first day of spring 1912
+* 
 */
 
 class Weather;
@@ -22,6 +25,7 @@ public:
 	int Day;
 	int Month;
 	int Year;
+	season seasonNow;
 
 	Date();
 	Date AdvanceDate(Date currentDate);

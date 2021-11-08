@@ -7,6 +7,7 @@ Date::Date()
 	Day = 20;
 	Month = 3;
 	Year = 1912;
+	seasonNow = SPRING;
 	todaysWeather = new Weather();
 }
 

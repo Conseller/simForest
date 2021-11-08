@@ -6,8 +6,12 @@
 #include "Wound.h"
 #include "GroundSubSquare.h"
 
-/*
-*Base class from which all of the other trees will be inherited
+/**
+* 
+* Base class from which all of the other trees will be inherited. 
+* Includes getters and setters so that the trees can be changed 
+* by other events. 
+* 
 */
 
 class BaseTree {
@@ -22,9 +26,9 @@ public:
 
 	std::string name;
 
-	void die();
-	void grow(float sun, double water);
-
+	void die(); ///< Tree is fully dead, no longer grows, no longer consumes resources and cannot be used as a communication node
+	//void grow(float sun, double water); ///< handled by event now
+	
 #pragma region Getters and Setters
 	int getAge() {
 		return age;
@@ -132,20 +136,20 @@ public:
 #pragma endregion
 
 
-	void addWound(std::string wound); //if the tree gets damaged or has an infestation
-	void addConnections(BaseTree* connection); //Trees are connected to their immediate neighbours and can communicate with each other and share resources
+	void addWound(Wound wound); ///< if the tree gets damaged or has an infestation
+	void addConnections(BaseTree* connection); ///< Trees are connected to their immediate neighbours and can communicate with each other and share resources
 
 protected:
-	float symmetry; // value between 0.0 and 1.0 indicating how symmetrical is the tree with 0.0 being the least. 
+	float symmetry; ///< value between 0.0 and 1.0 indicating how symmetrical is the tree with 0.0 being the least. 
 	int age;
-	float fullSun; // value between 0.0 and 1.0 indicating how much sun is being blocked before it reaches the leaves. 1.0 for direct sun and 0.0 for darkness
-	float health; // value between 0.0 and 1.0 indicating the overall health of the tree. Wounds, lack of water, low symmetry, and weather events can all lower health
+	float fullSun; ///< value between 0.0 and 1.0 indicating how much sun is being blocked before it reaches the leaves. 1.0 for direct sun and 0.0 for darkness
+	float health; ///< value between 0.0 and 1.0 indicating the overall health of the tree. Wounds, lack of water, low symmetry, and weather events can all lower health
 	double height;
-	int connectedness; //Trees consider highly connected members of the community to be valuable, a tree that has many connections can serve as a communications hub.
-	double storedWater; //amount of water stored by the tree
-	double storedN; // amount of nitrogen
-	double storedPh; // amount of phosphorous
-	double storedMa; // amount of magnesium
+	int connectedness; ///<Trees consider highly connected members of the community to be valuable, a tree that has many connections can serve as a communications hub.
+	double storedWater; ///<amount of water stored by the tree
+	double storedN; ///< amount of nitrogen
+	double storedPh; ///< amount of phosphorous
+	double storedMa; ///< amount of magnesium
 
 	GroundSubSquare location;
 	GrowthStage growthStage;
@@ -157,10 +161,10 @@ protected:
 
 	//Event ReproduceEvent;
 
-	void attractInsects(); //some inherited tree types can attract insects to defend themselves from insect attack
-	void warnOfDanger(); // can communicate danger such as insects 
+	void attractInsects(); ///<some inherited tree types can attract insects to defend themselves from insect attack
+	void warnOfDanger(); ///< can communicate danger such as insects 
 	void pullWaterFromEarth(GroundSubSquare square);
-	void dropLeaves(); //deciduous only, should be its own event.
+	void dropLeaves(); ///< deciduous only, should be its own event triggered by temperature and light
 	void needWater();
 	void needNutrients(std::string nutrient, double amount);
 

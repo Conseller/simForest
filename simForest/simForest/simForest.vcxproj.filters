@@ -57,9 +57,6 @@
     <ClInclude Include="Weather.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Wound.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Oak.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -104,13 +101,13 @@
     <ClCompile Include="CanopySubSquare.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Wound.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Terrain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Event.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

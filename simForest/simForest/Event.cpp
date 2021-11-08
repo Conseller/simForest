@@ -21,29 +21,29 @@ Event::Event(Date eventDate, int eventWeight)
 	weight = eventWeight;
 }
 
-bool Event::operator< (const Event& e)
+bool Event::operator< (const Event& e) const
 {
+	
 	Date d = SimulationExecutive::getSimExec()->getSimulationDate();
-
 	if ( (e.date < d)  && (e.weight < this->weight))
 	{
 		return true;
 	}
 }
 
-bool Event::operator== (const Event& e)
+bool Event::operator== (const Event& e) const
 {
-	Date* d = &simExec.getSimulationDate();
-	if ((e.date == *d) && (e.date.Month == d->Month) && (e.date.Year == d->Year) && (e.weight == this->weight))
+	Date d = SimulationExecutive::getSimExec()->getSimulationDate();
+	if ((e.date == d) && (e.weight == this->weight))
 	{
 		return true;
 	}
 }
 
-bool Event::operator> (const Event& e)
+bool Event::operator> (const Event& e) const 
 {
-	Date* d = &simExec.getSimulationDate();
-	if ((e.date.Day > d->Day) || (e.date.Month > d->Month) || (e.date.Year > d->Year) && (e.weight > this->weight))
+	Date d = SimulationExecutive::getSimExec()->getSimulationDate();
+	if ((e.date> d) && (e.weight > this->weight))
 	{
 		return true;
 	}

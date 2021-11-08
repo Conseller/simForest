@@ -3,7 +3,8 @@
 #include "Terrain.h"
 #include <memory>
 
-/*
+/**
+* 
 * Represents the terrain that the tree is growing in. Each ground square can hold an adult tree and a juvenile tree for now, maybe more later??
 */
 

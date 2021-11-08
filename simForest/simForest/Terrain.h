@@ -1,6 +1,10 @@
 #pragma once
 
-//What nutrients and qualities does the actual ground have?
+/**
+* What nutrientsand qualities does the actual ground have ? Trees suck up nutrients in the soil during the transpiration process
+* A lack of nutrients can cause stunted growth or certain "Wounds"
+* 
+*/
 
 class Terrain {
 	float rockiness;

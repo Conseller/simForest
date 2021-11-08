@@ -2,7 +2,7 @@
 
 
 Weather::Weather() {
-	temperature = 20;
+	temperatureInCelsius = 20.0;
 	humidity = 50.0;
 	windspeed = 10;
 	todaysWind = NE;
@@ -23,6 +23,7 @@ std::string Weather::describeWeather()
 	return "it's a beautiful day";
 }
 
+/*
 void Weather::windStorm(std::vector<std::shared_ptr<BaseTree>>& allTheTrees, double windspeed)
 {
 	for(std::shared_ptr<BaseTree> tree : allTheTrees)
@@ -50,4 +51,4 @@ void Weather::windStorm(std::vector<std::shared_ptr<BaseTree>>& allTheTrees, dou
 		}
 
 	}
-}
+}*/

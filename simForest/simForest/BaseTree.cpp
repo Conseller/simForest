@@ -8,3 +8,4 @@ void BaseTree::addConnections(BaseTree* connection)
     //add this tree to the connections of the tree that's being connected to
 	connection->addConnections(this);	this->connectedness++;
 }
+

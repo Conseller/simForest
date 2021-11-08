@@ -4,9 +4,7 @@
 #include <iostream>
 #include <vector>
 
-/*
-* output to console for now
-*/
+
 
 
 class OutputEvent : public Event
@@ -14,5 +12,5 @@ class OutputEvent : public Event
 	std::vector<std::shared_ptr<BaseTree>> allTheTreesPointer;
 	std::vector<BaseTree> allTheTrees;
 public: 
-	void ExecuteEvent(std::vector<std::shared_ptr<BaseTree>> allTheTreesPointer, Weather todaysWeather);
+	void ExecuteEvent(std::vector<std::shared_ptr<BaseTree>> allTheTreesPointer);
 };

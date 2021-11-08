@@ -4,8 +4,11 @@
 #include "BaseTree.h"
 
 
-/*
-*Represents the space immediately above the ground square with the same ID. Indicates how much of the square is covered by tree canopy
+/**
+* 
+* Represents the space immediately above the ground square with the same ID. Indicates how much of the square is covered by tree canopy.
+* controls how much light reaches juveniles, and how much available space there is for trees to extend their canopy out as they grow. 
+* 
 */
 
 
