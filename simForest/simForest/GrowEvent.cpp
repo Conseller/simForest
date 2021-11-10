@@ -5,10 +5,13 @@
 
 
 
-
-GrowEvent::GrowEvent(std::vector<std::shared_ptr<BaseTree>> pointerToAllTheTrees)
+GrowEvent::GrowEvent()
 {
-	allTheTrees = pointerToAllTheTrees;
+	date = Date();
+}
+GrowEvent::GrowEvent(std::vector<std::shared_ptr<BaseTree>> pointersToAllTheTrees)
+{
+	allTheTrees = pointersToAllTheTrees;
 }
 
 void GrowEvent::ExecuteEvent()

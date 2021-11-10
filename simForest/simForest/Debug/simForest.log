@@ -1,5 +1,28 @@
-﻿  Weather.cpp
-Map.obj : error LNK2019: unresolved external symbol "public: __thiscall Square::Square(char)" (??0Square@@QAE@D@Z) referenced in function "public: __thiscall Map::Map(void)" (??0Map@@QAE@XZ)
-SimulationExecutive.obj : error LNK2019: unresolved external symbol "public: void __thiscall Event::ExecuteEvent(void)" (?ExecuteEvent@Event@@QAEXXZ) referenced in function "public: void __thiscall SimulationExecutive::runSimulation(void)" (?runSimulation@SimulationExecutive@@QAEXXZ)
-SimulationExecutive.obj : error LNK2019: unresolved external symbol "public: __thiscall GrowEvent::GrowEvent(class Date)" (??0GrowEvent@@QAE@VDate@@@Z) referenced in function "public: __thiscall SimulationExecutive::SimulationExecutive(void)" (??0SimulationExecutive@@QAE@XZ)
-C:\Users\user\source\repos\simForest\simForest\Debug\simForest.exe : fatal error LNK1120: 3 unresolved externals
+﻿  Event.cpp
+  GrowEvent.cpp
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.cpp(22,35): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.cpp(23,27): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.cpp(24,29): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.cpp(25,29): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  main.cpp
+C:\Users\user\source\repos\simForest\simForest\simForest\main.cpp(27,14): error C2259: 'OutputEvent': cannot instantiate abstract class
+C:\Users\user\source\repos\simForest\simForest\simForest\OutputEvent.h(10): message : see declaration of 'OutputEvent'
+C:\Users\user\source\repos\simForest\simForest\simForest\main.cpp(27,14): message : due to following members:
+C:\Users\user\source\repos\simForest\simForest\simForest\main.cpp(27,14): message : 'void Event::ExecuteEvent(void)': is abstract
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(23): message : see declaration of 'Event::ExecuteEvent'
+C:\Users\user\source\repos\simForest\simForest\simForest\main.cpp(27,28): error C2259: 'OutputEvent': cannot instantiate abstract class
+C:\Users\user\source\repos\simForest\simForest\simForest\OutputEvent.h(10): message : see declaration of 'OutputEvent'
+C:\Users\user\source\repos\simForest\simForest\simForest\main.cpp(27,28): message : due to following members:
+C:\Users\user\source\repos\simForest\simForest\simForest\main.cpp(27,28): message : 'void Event::ExecuteEvent(void)': is abstract
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(23): message : see declaration of 'Event::ExecuteEvent'
+  OutputEvent.cpp
+  SimulationExecutive.cpp
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.cpp(13,13): error C2280: 'GrowEvent &GrowEvent::operator =(const GrowEvent &)': attempting to reference a deleted function
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(25): message : compiler has generated 'GrowEvent::operator =' here
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(25,1): message : 'GrowEvent &GrowEvent::operator =(const GrowEvent &)': function was implicitly deleted because 'GrowEvent' has a data member 'GrowEvent::GROWTH_RATE' of const-qualified non-class type
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(19): message : see declaration of 'GrowEvent::GROWTH_RATE'
+  Square.cpp
+  Generating Code...
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.cpp(32): warning C4715: 'Event::operator<': not all control paths return a value
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.cpp(41): warning C4715: 'Event::operator==': not all control paths return a value
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.cpp(50): warning C4715: 'Event::operator>': not all control paths return a value

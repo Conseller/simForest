@@ -24,7 +24,7 @@ int main(int argc, char** argv)
 	Map map;
 	GrowEvent firstDayGrow(allTheTrees);
 	GrowEvent* firstDayGrowPointer = &firstDayGrow;
-	OutputEvent firstDayOutput;
+	OutputEvent firstDayOutput(allTheTrees);
 	OutputEvent* firstDayOutputPointer = &firstDayOutput;
 	
 	simExec.addEvent(firstDayGrowPointer);

@@ -9,6 +9,12 @@
 * an individual BaseTree object
 */
 
+OutputEvent::OutputEvent(std::vector<std::shared_ptr<BaseTree>> pointerToAllTheTrees)
+{
+	allTheTreesPointer = pointerToAllTheTrees;
+}
+
+
 void OutputEvent::ExecuteEvent(std::vector<std::shared_ptr<BaseTree>> allTheTreesPointer)
 {
 	for(std::shared_ptr<BaseTree> tree : allTheTreesPointer)

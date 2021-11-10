@@ -31,7 +31,7 @@ public:
 private:
 
 	std::queue<Event*> eventQueue; ///< Event Queue holds the Events to be executed.
-	Event firstEvent;///< Event that starts the simulation, comes from main
+	GrowEvent firstEvent;///< Event that starts the simulation, comes from main
 	Date currentDate;
 	bool hasNextEvent;
 	bool isEndOfDay;

@@ -9,8 +9,12 @@
 
 class OutputEvent : public Event
 {
+private:
+
 	std::vector<std::shared_ptr<BaseTree>> allTheTreesPointer;
 	std::vector<BaseTree> allTheTrees;
+
 public: 
 	void ExecuteEvent(std::vector<std::shared_ptr<BaseTree>> allTheTreesPointer);
+	OutputEvent(std::vector<std::shared_ptr<BaseTree>> allTheTrees);
 };

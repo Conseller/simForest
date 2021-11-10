@@ -17,7 +17,8 @@ private:
 
 public:
 	const double GROWTH_RATE = 1.0012526;
-	GrowEvent(std::vector<std::shared_ptr<BaseTree>> allTheTrees);
+	GrowEvent();
+	GrowEvent(std::vector<std::shared_ptr<BaseTree>> pointersToAllTheTrees);
 	GrowEvent(Date dateOfGrowth);
 	void ExecuteEvent(Date date, int weight, BaseTree* effectedTree);
     void ExecuteEvent();

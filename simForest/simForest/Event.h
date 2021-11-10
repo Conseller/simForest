@@ -20,7 +20,7 @@ class Event {
 
 
 public:
-	void ExecuteEvent();	
+	virtual void ExecuteEvent() = 0;	
 	Event(Date startDate);
 	Event(Date eventDate, int eventWeight);
 	Event();
