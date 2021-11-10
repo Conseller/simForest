@@ -135,9 +135,18 @@ public:
 	}
 #pragma endregion
 
+	/**
+	* if the tree gets damaged or has an infestation
+	* @param[in] wound the type of wound to be added to the tree
+	*/
+	void addWound(Wound wound);
 
-	void addWound(Wound wound); ///< if the tree gets damaged or has an infestation
-	void addConnections(BaseTree* connection); ///< Trees are connected to their immediate neighbours and can communicate with each other and share resources
+	/**
+	* Trees are connected to their immediate neighbours and can communicate with each other and share resources. 
+	* When a connection is made, both trees are added to the others connections
+	* @param[in] connection a pointer to the tree that is being connected to
+	*/
+	void addConnections(BaseTree* connection); ///< 
 
 protected:
 	float symmetry; ///< value between 0.0 and 1.0 indicating how symmetrical is the tree with 0.0 being the least. 
@@ -166,7 +175,15 @@ protected:
 	void pullWaterFromEarth(GroundSubSquare square);
 	void dropLeaves(); ///< deciduous only, should be its own event triggered by temperature and light
 	void needWater();
-	void needNutrients(std::string nutrient, double amount);
+
+	/**
+	* A tree can ask any neighbors that it is connected to to provide it with nutrients 
+	* if it cannot get them from the soil
+	* @param[in] nutrient which nutrient the tree requires
+	* @param[in] amount how much of that nutrient
+	* @param[in] treeBeingAsked who is being asked to provide the nutrient
+	*/
+	void needNutrients(std::string nutrient, double amount, BaseTree* treeBeingAsked);
 
 
 
