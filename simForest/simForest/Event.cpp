@@ -21,6 +21,18 @@ Event::Event(Date eventDate, int eventWeight)
 	weight = eventWeight;
 }
 
+void Event::setDate(Date d)
+{
+	date = d;
+}
+
+
+Date Event::getDate() 
+{
+	return date;
+}
+
+
 bool Event::operator< (const Event& e) const
 {
 	

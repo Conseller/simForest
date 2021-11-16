@@ -25,6 +25,9 @@ public:
 	Event(Date eventDate, int eventWeight);
 	Event();
 
+	void setDate(Date d);
+	Date getDate();
+
 	Date date;
 	int weight;
 
