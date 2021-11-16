@@ -1,4 +1,7 @@
-﻿  Event.cpp
+﻿  BaseTree.cpp
+  CanopySubSquare.cpp
+  Date.cpp
+  Event.cpp
   GrowEvent.cpp
 C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.cpp(22,35): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
 C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.cpp(23,27): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
@@ -15,6 +18,8 @@ C:\Users\user\source\repos\simForest\simForest\simForest\OutputEvent.h(10): mess
 C:\Users\user\source\repos\simForest\simForest\simForest\main.cpp(27,28): message : due to following members:
 C:\Users\user\source\repos\simForest\simForest\simForest\main.cpp(27,28): message : 'void Event::ExecuteEvent(void)': is abstract
 C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(23): message : see declaration of 'Event::ExecuteEvent'
+  Map.cpp
+  Oak.cpp
   OutputEvent.cpp
   SimulationExecutive.cpp
 C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.cpp(13,13): error C2280: 'GrowEvent &GrowEvent::operator =(const GrowEvent &)': attempting to reference a deleted function
@@ -22,7 +27,12 @@ C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(25): messag
 C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(25,1): message : 'GrowEvent &GrowEvent::operator =(const GrowEvent &)': function was implicitly deleted because 'GrowEvent' has a data member 'GrowEvent::GROWTH_RATE' of const-qualified non-class type
 C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(19): message : see declaration of 'GrowEvent::GROWTH_RATE'
   Square.cpp
+  Weather.cpp
   Generating Code...
-C:\Users\user\source\repos\simForest\simForest\simForest\Event.cpp(32): warning C4715: 'Event::operator<': not all control paths return a value
-C:\Users\user\source\repos\simForest\simForest\simForest\Event.cpp(41): warning C4715: 'Event::operator==': not all control paths return a value
-C:\Users\user\source\repos\simForest\simForest\simForest\Event.cpp(50): warning C4715: 'Event::operator>': not all control paths return a value
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.cpp(44): warning C4715: 'Event::operator<': not all control paths return a value
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.cpp(53): warning C4715: 'Event::operator==': not all control paths return a value
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.cpp(62): warning C4715: 'Event::operator>': not all control paths return a value
+C:\Users\user\source\repos\simForest\simForest\simForest\Date.cpp(55): warning C4715: 'Date::operator<': not all control paths return a value
+C:\Users\user\source\repos\simForest\simForest\simForest\Date.cpp(63): warning C4715: 'Date::operator==': not all control paths return a value
+C:\Users\user\source\repos\simForest\simForest\simForest\Date.cpp(71): warning C4715: 'Date::operator>': not all control paths return a value
+C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.cpp(10): warning C4717: 'BaseTree::addConnections': recursive on all control paths, function will cause runtime stack overflow

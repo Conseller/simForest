@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <memory>
-#include <queue>
+#include <vector>
 
 #include "Date.h"
 #include "Event.h"
@@ -30,7 +30,7 @@ public:
 
 private:
 
-	std::queue<Event*> eventQueue; ///< Event Queue holds the Events to be executed.
+	std::vector<Event*> eventQueue; ///< Event Queue holds the Events to be executed.
 	GrowEvent firstEvent;///< Event that starts the simulation, comes from main
 	Date currentDate;
 	bool hasNextEvent;
