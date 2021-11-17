@@ -20,6 +20,14 @@ public:
 	GrowEvent();
 	GrowEvent(std::vector<std::shared_ptr<BaseTree>> pointersToAllTheTrees);
 	GrowEvent(Date dateOfGrowth);
+
+    virtual ~GrowEvent() = default;
+
 	void ExecuteEvent(Date date, int weight, BaseTree* effectedTree);
     void ExecuteEvent();
+
+    std::string getType() const override
+    {
+        return "Event Type: Grow";
+    }
 };

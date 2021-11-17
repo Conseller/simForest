@@ -15,6 +15,6 @@ private:
 	std::vector<BaseTree> allTheTrees;
 
 public: 
-	void ExecuteEvent(std::vector<std::shared_ptr<BaseTree>> allTheTreesPointer);
+	void ExecuteEvent() override;
 	OutputEvent(std::vector<std::shared_ptr<BaseTree>> allTheTrees);
 };

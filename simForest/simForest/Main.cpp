@@ -16,19 +16,17 @@ int main(int argc, char** argv)
 {
 	GroundSubSquare firstTreeLocation(1, 'A');
 	Oak testTree(firstTreeLocation);
-	SimulationExecutive simExec;
+	SimulationExecutive* simExec = SimulationExecutive::getSimExec();
 
 	std::vector<std::shared_ptr<BaseTree>> allTheTrees;
 
-	
+
 	Map map;
-	GrowEvent firstDayGrow(allTheTrees);
-	GrowEvent* firstDayGrowPointer = &firstDayGrow;
-	OutputEvent firstDayOutput(allTheTrees);
-	OutputEvent* firstDayOutputPointer = &firstDayOutput;
-	
-	simExec.addEvent(firstDayGrowPointer);
-	simExec.addEvent(firstDayOutputPointer);
-	simExec.runSimulation();
+	Event* firstDayGrow = new GrowEvent(allTheTrees);
+	Event* firstDayOutput = new OutputEvent(allTheTrees);
+
+	simExec->addEvent(firstDayGrow);
+	simExec->addEvent(firstDayOutput);
+	simExec->runSimulation();
 	//return 0;
 }

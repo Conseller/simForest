@@ -52,6 +52,8 @@ bool Date::operator< (const Date& d) const
 	{
 		return true;
 	}
+
+    return false;
 }
 
 bool Date::operator== (const Date& d) const
@@ -60,6 +62,8 @@ bool Date::operator== (const Date& d) const
 	{
 		return true;
 	}
+
+    return false;
 }
 
 bool Date::operator> (const Date& d) const
@@ -68,4 +72,6 @@ bool Date::operator> (const Date& d) const
 	{
 		return true;
 	}
+
+    return false;
 }

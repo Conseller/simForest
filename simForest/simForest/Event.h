@@ -25,6 +25,8 @@ public:
 	Event(Date eventDate, int eventWeight);
 	Event();
 
+    virtual ~Event() = default;
+
 	void setDate(Date d);
 	Date getDate();
 
@@ -35,4 +37,9 @@ public:
 	bool operator<(const Event& e) const;
 	bool operator==(const Event& e) const;
 	bool operator>(const Event& e) const;
+
+    virtual std::string getType() const
+    {
+        return "Event Type: Undefined!!";
+    }
 };

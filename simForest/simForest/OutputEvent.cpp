@@ -15,7 +15,7 @@ OutputEvent::OutputEvent(std::vector<std::shared_ptr<BaseTree>> pointerToAllTheT
 }
 
 
-void OutputEvent::ExecuteEvent(std::vector<std::shared_ptr<BaseTree>> allTheTreesPointer)
+void OutputEvent::ExecuteEvent()
 {
 	for(std::shared_ptr<BaseTree> tree : allTheTreesPointer)
 	{
