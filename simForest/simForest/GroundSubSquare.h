@@ -20,7 +20,7 @@ public:
 	GroundSubSquare();
 	GroundSubSquare(std::shared_ptr<BaseTree> thisSquaresTree);
 	GroundSubSquare(int ID, char squareID);
-	~GroundSubSquare();
+	~GroundSubSquare() = default;
 
 	
 protected: 

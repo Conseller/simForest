@@ -21,6 +21,7 @@ public:
 	CanopySubSquare();
 	CanopySubSquare(std::shared_ptr<BaseTree> thisSquaresTree);
 	CanopySubSquare(int ID, char squareID);
+	~CanopySubSquare() = default;
 
 protected:
 	float sunCoverage; // sun coverage = symmetry * modifier for tree size

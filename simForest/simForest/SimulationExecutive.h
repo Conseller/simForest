@@ -40,7 +40,7 @@ private:
 
 public:
 	SimulationExecutive();
-	~SimulationExecutive();
+	~SimulationExecutive() = default;
 	void scheduleEventAt(Date date, int weight, Event* eventToSchedule); ///< Schedules an event to occur on a certain date
 	void scheduleEventIn(int delay, int weight, Event* eventToSchedule); ///< Schedules an event to occur after a certain delay
 	void runSimulation();

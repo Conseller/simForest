@@ -17,6 +17,7 @@ OutputEvent::OutputEvent(std::vector<std::shared_ptr<BaseTree>> pointerToAllTheT
 
 void OutputEvent::ExecuteEvent()
 {
+	std::cout << "we got into the function" << std::endl;
 	for(std::shared_ptr<BaseTree> tree : allTheTreesPointer)
 	{
 		std::cout << "Todays Weather is: " << std::endl;

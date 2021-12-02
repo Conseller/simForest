@@ -28,6 +28,7 @@ public:
 	season seasonNow;
 
 	Date();
+	~Date() = default;
 	Date AdvanceDate(Date currentDate);
 	bool operator<(const Date& d) const;
 	bool operator==(const Date& d) const;
