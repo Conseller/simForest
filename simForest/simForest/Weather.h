@@ -18,6 +18,7 @@
 class Weather {
 public:
 	Weather();
+	~Weather();
 	std::string todaysWeather;
 	enum WindDirection { N, E, S, W, NE, NW, SE, SW };
 

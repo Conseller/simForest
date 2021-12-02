@@ -17,4 +17,6 @@ private:
 public: 
 	void ExecuteEvent() override;
 	OutputEvent(std::vector<std::shared_ptr<BaseTree>> allTheTrees);
+	~OutputEvent();
+	std::string getType() const override;
 };

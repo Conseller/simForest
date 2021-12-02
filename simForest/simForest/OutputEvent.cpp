@@ -38,3 +38,8 @@ void OutputEvent::ExecuteEvent()
 		}
 	};
 };
+
+inline std::string OutputEvent::getType() const
+{
+	return "Event Type: Output";
+}

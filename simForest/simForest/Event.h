@@ -2,6 +2,7 @@
 
 #include <utility>
 #include <algorithm>
+#include <string>
 #include "Date.h"
 
 
@@ -38,7 +39,7 @@ public:
 	bool operator==(const Event& e) const;
 	bool operator>(const Event& e) const;
 
-    virtual std::string getType() const
+   inline virtual std::string getType() const
     {
         return "Event Type: Undefined!!";
     }

@@ -24,6 +24,8 @@ public:
 	//TreeType treeType;
 	//TreeSpecies treeSpecies;
 
+	virtual ~BaseTree() = default;
+
 	std::string name;
 
 	void die(); ///< Tree is fully dead, no longer grows, no longer consumes resources and cannot be used as a communication node

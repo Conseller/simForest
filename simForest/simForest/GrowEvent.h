@@ -3,6 +3,8 @@
 #include "BaseTree.h"
 #include <vector>
 #include <memory>
+#include <iostream>
+#include <string>
 
 /**
  * This event adds height to a tree assuming it has access to the light, water
@@ -26,8 +28,5 @@ public:
 	void ExecuteEvent(Date date, int weight, BaseTree* effectedTree);
     void ExecuteEvent();
 
-    std::string getType() const override
-    {
-        return "Event Type: Grow";
-    }
+	std::string getType() const override;
 };

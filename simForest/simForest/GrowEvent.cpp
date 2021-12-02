@@ -1,10 +1,8 @@
 #include "GrowEvent.h"
 #include "Event.h"
 #include "BaseTree.h"
-#include <vector>
-#include <iostream>
 
-
+using namespace std;
 
 GrowEvent::GrowEvent()
 {
@@ -34,4 +32,9 @@ void GrowEvent::ExecuteEvent()
 	//effectedTree.storedN--;
 	//effectedTree.storedPh--;
 	//effectedTree.storedMa--;
+}
+
+inline std::string GrowEvent::getType() const
+{
+	return "Event Type: Grow";
 }

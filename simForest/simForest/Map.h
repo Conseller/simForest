@@ -11,4 +11,5 @@ class Map {
 	std::array<std::array<Square, 4>, 4> bigGrid;
 public:
 	Map();
+	~Map();
 };

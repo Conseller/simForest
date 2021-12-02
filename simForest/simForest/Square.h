@@ -10,6 +10,7 @@ class Square {
 public:
 	Square();
 	Square(char ID);
+	~Square();
 	char ID;
 
 	std::array<std::array<GroundSubSquare, 9>, 9> GroundSubSquares;
