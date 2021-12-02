@@ -3,14 +3,15 @@
   Date.cpp
   Event.cpp
 C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(41,18): error C2039: 'string': is not a member of 'std'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\algorithm(40): message : see declaration of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(40): message : see declaration of 'std'
 C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(41,25): error C3646: 'getType': unknown override specifier
 C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(41,33): error C2059: syntax error: ')'
 C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(42,5): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
 C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(29,17): error C3668: 'GrowEvent::getType': method with override specifier 'override' did not override any base class methods
+  GroundSubSquare.cpp
   GrowEvent.cpp
 C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(41,18): error C2039: 'string': is not a member of 'std'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\algorithm(40): message : see declaration of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(40): message : see declaration of 'std'
 C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(41,25): error C3646: 'getType': unknown override specifier
 C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(41,33): error C2059: syntax error: ')'
 C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(42,5): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
@@ -24,12 +25,13 @@ C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.cpp(28,29): w
   Oak.cpp
   OutputEvent.cpp
 C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(41,18): error C2039: 'string': is not a member of 'std'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\algorithm(40): message : see declaration of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(40): message : see declaration of 'std'
 C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(41,25): error C3646: 'getType': unknown override specifier
 C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(41,33): error C2059: syntax error: ')'
 C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(42,5): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
   SimulationExecutive.cpp
 C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.cpp(71,5): warning C4102: 'std': unreferenced label
+  Terrain.cpp
   Square.cpp
   Weather.cpp
   Generating Code...
