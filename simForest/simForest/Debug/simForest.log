@@ -2,37 +2,35 @@
   CanopySubSquare.cpp
   Date.cpp
   Event.cpp
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(41,18): error C2039: 'string': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\algorithm(40): message : see declaration of 'std'
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(41,25): error C3646: 'getType': unknown override specifier
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(41,33): error C2059: syntax error: ')'
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(42,5): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(29,17): error C3668: 'GrowEvent::getType': method with override specifier 'override' did not override any base class methods
   GrowEvent.cpp
-C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.cpp(22,35): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.cpp(23,27): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.cpp(24,29): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.cpp(25,29): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(41,18): error C2039: 'string': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\algorithm(40): message : see declaration of 'std'
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(41,25): error C3646: 'getType': unknown override specifier
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(41,33): error C2059: syntax error: ')'
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(42,5): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(29,17): error C3668: 'GrowEvent::getType': method with override specifier 'override' did not override any base class methods
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.cpp(25,35): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.cpp(26,27): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.cpp(27,29): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.cpp(28,29): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   main.cpp
-C:\Users\user\source\repos\simForest\simForest\simForest\main.cpp(27,14): error C2259: 'OutputEvent': cannot instantiate abstract class
-C:\Users\user\source\repos\simForest\simForest\simForest\OutputEvent.h(10): message : see declaration of 'OutputEvent'
-C:\Users\user\source\repos\simForest\simForest\simForest\main.cpp(27,14): message : due to following members:
-C:\Users\user\source\repos\simForest\simForest\simForest\main.cpp(27,14): message : 'void Event::ExecuteEvent(void)': is abstract
-C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(23): message : see declaration of 'Event::ExecuteEvent'
-C:\Users\user\source\repos\simForest\simForest\simForest\main.cpp(27,28): error C2259: 'OutputEvent': cannot instantiate abstract class
-C:\Users\user\source\repos\simForest\simForest\simForest\OutputEvent.h(10): message : see declaration of 'OutputEvent'
-C:\Users\user\source\repos\simForest\simForest\simForest\main.cpp(27,28): message : due to following members:
-C:\Users\user\source\repos\simForest\simForest\simForest\main.cpp(27,28): message : 'void Event::ExecuteEvent(void)': is abstract
-C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(23): message : see declaration of 'Event::ExecuteEvent'
   Map.cpp
   Oak.cpp
   OutputEvent.cpp
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(41,18): error C2039: 'string': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\algorithm(40): message : see declaration of 'std'
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(41,25): error C3646: 'getType': unknown override specifier
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(41,33): error C2059: syntax error: ')'
+C:\Users\user\source\repos\simForest\simForest\simForest\Event.h(42,5): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
   SimulationExecutive.cpp
-C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.cpp(13,13): error C2280: 'GrowEvent &GrowEvent::operator =(const GrowEvent &)': attempting to reference a deleted function
-C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(25): message : compiler has generated 'GrowEvent::operator =' here
-C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(25,1): message : 'GrowEvent &GrowEvent::operator =(const GrowEvent &)': function was implicitly deleted because 'GrowEvent' has a data member 'GrowEvent::GROWTH_RATE' of const-qualified non-class type
-C:\Users\user\source\repos\simForest\simForest\simForest\GrowEvent.h(19): message : see declaration of 'GrowEvent::GROWTH_RATE'
+C:\Users\user\source\repos\simForest\simForest\simForest\SimulationExecutive.cpp(71,5): warning C4102: 'std': unreferenced label
   Square.cpp
   Weather.cpp
   Generating Code...
-C:\Users\user\source\repos\simForest\simForest\simForest\Event.cpp(44): warning C4715: 'Event::operator<': not all control paths return a value
-C:\Users\user\source\repos\simForest\simForest\simForest\Event.cpp(53): warning C4715: 'Event::operator==': not all control paths return a value
-C:\Users\user\source\repos\simForest\simForest\simForest\Event.cpp(62): warning C4715: 'Event::operator>': not all control paths return a value
-C:\Users\user\source\repos\simForest\simForest\simForest\Date.cpp(55): warning C4715: 'Date::operator<': not all control paths return a value
-C:\Users\user\source\repos\simForest\simForest\simForest\Date.cpp(63): warning C4715: 'Date::operator==': not all control paths return a value
-C:\Users\user\source\repos\simForest\simForest\simForest\Date.cpp(71): warning C4715: 'Date::operator>': not all control paths return a value
 C:\Users\user\source\repos\simForest\simForest\simForest\BaseTree.cpp(10): warning C4717: 'BaseTree::addConnections': recursive on all control paths, function will cause runtime stack overflow
