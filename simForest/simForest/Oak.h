@@ -11,5 +11,5 @@ class Oak : public BaseTree
 public:
 	Oak();
 	Oak(GroundSubSquare location);
-	~Oak() = default;
+	virtual ~Oak() = default;
 };

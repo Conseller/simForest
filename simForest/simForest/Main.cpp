@@ -9,6 +9,7 @@
 #include "OutputEvent.h"
 #include "Map.h"
 #include <vector>
+#include <memory>
 
 
 
@@ -27,6 +28,9 @@ int main(int argc, char** argv)
 	SimulationExecutive* simExec = SimulationExecutive::getSimExec();
 
 	std::vector<std::shared_ptr<BaseTree>> allTheTrees;
+
+    auto testTreePtr = std::shared_ptr<BaseTree>(new Oak(firstTreeLocation));
+    allTheTrees.push_back(testTreePtr);
 
 
 	Map map;

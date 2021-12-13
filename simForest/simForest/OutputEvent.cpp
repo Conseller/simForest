@@ -11,13 +11,18 @@
 
 OutputEvent::OutputEvent(std::vector<std::shared_ptr<BaseTree>> pointerToAllTheTrees)
 {
+	std::cerr << "Starting OutputEvent::OutputEvent -> " << pointerToAllTheTrees.size() << " to add" << std::endl;
 	allTheTreesPointer = pointerToAllTheTrees;
+	std::cerr << "Starting OutputEvent::OutputEvent -> " << allTheTreesPointer.size() << " added" << std::endl;
+
 }
 
 
 void OutputEvent::ExecuteEvent()
 {
-	std::cout << "we got into the function" << std::endl;
+	std::cerr << "Starting OutputEvent::ExecuteEvent -> " << allTheTreesPointer.size() << " trees to output" << std::endl;
+
+
 	for(std::shared_ptr<BaseTree> tree : allTheTreesPointer)
 	{
 		std::cout << "Todays Weather is: " << std::endl;

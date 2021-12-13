@@ -31,5 +31,6 @@ Oak::Oak(GroundSubSquare location)
 	storedN = 100;
 	storedPh = 100;
 	storedMa = 100;
+    treeSpecies = BaseTree::TreeSpecies::OAK;
 }
 
