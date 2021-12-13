@@ -14,7 +14,7 @@ class Date {
 
 	
 
-	Weather* todaysWeather;
+    Weather* todaysWeather;
 
 
 
@@ -28,8 +28,12 @@ public:
 	season seasonNow;
 
 	Date();
-	~Date() = default;
-	Date AdvanceDate(Date currentDate);
+    Date(const Date& src) = delete;
+	~Date();
+
+    Date& operator=(const Date& rhs);
+
+	void AdvanceDate();
 	bool operator<(const Date& d) const;
 	bool operator==(const Date& d) const;
 	bool operator>(const Date& d) const;

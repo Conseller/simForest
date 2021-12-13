@@ -36,6 +36,8 @@ void SimulationExecutive::runSimulation()
 
 		currentEvent->ExecuteEvent();
 		eventQueue.erase(eventQueue.begin());
+        delete currentEvent;
+
 		if (eventQueue.size() == 0)
 		{
 			hasNextEvent = false;
@@ -74,7 +76,7 @@ void SimulationExecutive::Continue()
 
 void SimulationExecutive::endOfDay()
 {
-	currentDate = currentDate.AdvanceDate(currentDate);
+	currentDate.AdvanceDate();
 	std::sort(eventQueue.begin(), eventQueue.end());
 }
 
@@ -84,7 +86,7 @@ void SimulationExecutive::addEvent(Event* eventToAdd)
     std::cerr << "Queue Size: " << eventQueue.size() << " | " << eventToAdd->getType() << "\n";
 }
 
-Date SimulationExecutive::getSimulationDate()
+const Date& SimulationExecutive::getSimulationDate()
 {
 	return currentDate;
 }

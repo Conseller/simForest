@@ -5,9 +5,10 @@
 using namespace std;
 
 GrowEvent::GrowEvent()
+    :date()
 {
-	date = Date();
 }
+
 GrowEvent::GrowEvent(std::vector<std::shared_ptr<BaseTree>> pointersToAllTheTrees)
 {
 	allTheTrees = pointersToAllTheTrees;

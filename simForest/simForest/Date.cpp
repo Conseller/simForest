@@ -11,39 +11,54 @@ Date::Date()
 	todaysWeather = new Weather();
 }
 
-Date Date::AdvanceDate(Date currentDate)
+Date::~Date()
+{
+    delete todaysWeather;
+}
+
+Date& Date::operator=(const Date& rhs)
+{
+	this->Day = rhs.Day;
+	this->Month = rhs.Month;
+	this->Year = rhs.Year;
+	this->seasonNow = rhs.seasonNow;
+	this->todaysWeather = new Weather();
+
+    return *this;
+    
+}
+
+void Date::AdvanceDate()
 {
 
-	if((currentDate.Day == 30) && (currentDate.Month == 9 || 4 || 6 || 11))
+	if((this->Day == 30) && (this->Month == 9 || 4 || 6 || 11))
 	{
-		currentDate.Day = 1;
-		currentDate.Month++;
+		this->Day = 1;
+		this->Month++;
 	}
 
-	else if ((currentDate.Day == 31) && (currentDate.Month == 1 || 3 || 5 || 7 || 8 || 9 || 10))
+	else if ((this->Day == 31) && (this->Month == 1 || this->Month == 3 || 5 || 7 || 8 || 9 || 10))
 	{
-		currentDate.Day++;
+		this->Day++;
 	}
 
-	else if ((currentDate.Day == 28) && (currentDate.Month == 2))
+	else if ((this->Day == 28) && (this->Month == 2))
 	{
-		currentDate.Day = 1;
-		currentDate.Month = 3;
+		this->Day = 1;
+		this->Month = 3;
 	}
 
-	else if ((currentDate.Day == 31) && (currentDate.Month == 12))
+	else if ((this->Day == 31) && (this->Month == 12))
 	{
-		currentDate.Day = 1;
-		currentDate.Month = 1;
-		currentDate.Year++;
+		this->Day = 1;
+		this->Month = 1;
+		this->Year++;
 	}
 
 	else
 	{
-		currentDate.Day++;
+		this->Day++;
 	}
-
-	return currentDate;
 }
 
 bool Date::operator< (const Date& d) const

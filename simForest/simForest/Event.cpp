@@ -27,7 +27,7 @@ void Event::setDate(Date d)
 }
 
 
-Date Event::getDate()
+const Date& Event::getDate() const
 {
 	return date;
 }
@@ -36,7 +36,7 @@ Date Event::getDate()
 bool Event::operator< (const Event& e) const
 {
 
-	Date d = SimulationExecutive::getSimExec()->getSimulationDate();
+	const Date& d = SimulationExecutive::getSimExec()->getSimulationDate();
 	if ( (e.date < d)  && (e.weight < this->weight))
 	{
 		return true;
@@ -47,7 +47,7 @@ bool Event::operator< (const Event& e) const
 
 bool Event::operator== (const Event& e) const
 {
-	Date d = SimulationExecutive::getSimExec()->getSimulationDate();
+	const Date& d = SimulationExecutive::getSimExec()->getSimulationDate();
 	if ((e.date == d) && (e.weight == this->weight))
 	{
 		return true;
@@ -58,7 +58,7 @@ bool Event::operator== (const Event& e) const
 
 bool Event::operator> (const Event& e) const
 {
-	Date d = SimulationExecutive::getSimExec()->getSimulationDate();
+	const Date& d = SimulationExecutive::getSimExec()->getSimulationDate();
 	if ((e.date> d) && (e.weight > this->weight))
 	{
 		return true;

@@ -45,7 +45,7 @@ public:
 	void scheduleEventIn(int delay, int weight, Event* eventToSchedule); ///< Schedules an event to occur after a certain delay
 	void runSimulation();
 	void runSimulationOneDay();///< Run simulation for one day and then stop
-	Date getSimulationDate();
+	const Date& getSimulationDate();
 	void addEvent(Event* eventToAdd); ///< Add event to event queue
 	void endOfDay(); ///< Changes weather, date, things that change from day to day but are not events
 };

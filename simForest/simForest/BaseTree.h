@@ -1,4 +1,5 @@
 #pragma once
+#include <ostream>
 #include <string>
 #include <vector>
 #include <memory>
@@ -23,6 +24,12 @@ public:
 	//GrowthStage growthStage;
 	//TreeType treeType;
 	//TreeSpecies treeSpecies;
+
+    BaseTree()
+    {
+        this->myId = BaseTree::nextTreeId;
+        ++BaseTree::nextTreeId;
+    }
 
 	virtual ~BaseTree() = default;
 
@@ -84,6 +91,11 @@ public:
 		return storedN;
 	}
 
+    int getMyId() const
+    {
+        return this->myId;
+    }
+
 	void setName(std::string newName) {
 		name = newName;
 	}
@@ -135,6 +147,9 @@ public:
 	void setTreeType(TreeType type) {
 		treeType = type;
 	}
+
+    
+
 #pragma endregion
 
 	/**
@@ -170,6 +185,9 @@ protected:
 	std::vector<BaseTree*> connections;
 	std::vector<Wound> wounds;
 
+    static int nextTreeId;
+    int myId;
+
 	//Event ReproduceEvent;
 
 	void attractInsects(); ///<some inherited tree types can attract insects to defend themselves from insect attack
@@ -191,3 +209,8 @@ protected:
 
 
 };
+
+std::ostream& operator<<(std::ostream& outs, BaseTree::GrowthStage theStage);
+
+// TreeType { DECIDUOUS, CONIFEROUS }; //effects behavior for reproduction, overwintering etc. 
+// TreeSpecies {ELM, OAK, ASH, FIR, BEECH, BIRCH, WILLOW};

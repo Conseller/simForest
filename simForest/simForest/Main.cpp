@@ -21,22 +21,22 @@ int main(int argc, char** argv)
 	GroundSubSquare thirdTreeLocation(3, 'A');
 	GroundSubSquare fourthTreeLocation(4, 'A');
 
-	Oak oakTree1(firstTreeLocation);
-	Fir firTree1(secondTreeLocation);
-	Oak oakTree2(thirdTreeLocation);
-	Fir firTree2(fourthTreeLocation);
+	// Oak oakTree1(firstTreeLocation);
+	// Fir firTree1(secondTreeLocation);
+	// Oak oakTree2(thirdTreeLocation);
+	// Fir firTree2(fourthTreeLocation);
 
-	BaseTree* firstOakRaw = &oakTree1;
-	BaseTree* firstFirRaw = &firTree1;
+	// BaseTree* firstOakRaw = &oakTree1;
+	// BaseTree* firstFirRaw = &firTree1;
 
 	SimulationExecutive* simExec = SimulationExecutive::getSimExec();
 
 	std::vector<std::shared_ptr<BaseTree>> allTheTrees;
 
     auto firstTreePtr = std::shared_ptr<BaseTree>(new Oak(firstTreeLocation));
-    auto secondTreePtr = std::shared_ptr<BaseTree>(new Oak(secondTreeLocation));
+    auto secondTreePtr = std::shared_ptr<BaseTree>(new Fir(secondTreeLocation));
     auto thirdTreePtr = std::shared_ptr<BaseTree>(new Oak(thirdTreeLocation));
-    auto fourthTreePtr = std::shared_ptr<BaseTree>(new Oak(fourthTreeLocation));
+    auto fourthTreePtr = std::shared_ptr<BaseTree>(new Fir(fourthTreeLocation));
 
     allTheTrees.push_back(firstTreePtr);
     allTheTrees.push_back(secondTreePtr);
@@ -50,16 +50,19 @@ int main(int argc, char** argv)
 
 	Map map;
 
-	for (int i = 0; i < 9; i++)
+    const int numDays = 10;
+	for (int i = 0; i < numDays; ++i)
 	{
 		//std::cout << "Today's Date is " << simExec->getSimulationDate() << std::endl;
-		Event* Grow = new GrowEvent(allTheTrees);
-		Event* Output = new OutputEvent(allTheTrees);
-		simExec->addEvent(Grow);
-		simExec->addEvent(Output);
+		Event* grow = new GrowEvent(allTheTrees);
+		Event* output = new OutputEvent(allTheTrees);
+		simExec->addEvent(grow);
+		simExec->addEvent(output);
 		simExec->endOfDay();
 	}
 
 	simExec->runSimulation();
-	//return 0;
+    delete simExec;
+
+	return 0;
 }

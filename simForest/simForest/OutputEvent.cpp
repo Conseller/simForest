@@ -30,9 +30,14 @@ void OutputEvent::ExecuteEvent()
 		std::cout << std::endl; 
 		std::cout << std::endl; 
 		std::cout << std::endl; 
-		std::cout << "Tree: " << tree->getName() << " is a" << tree->getGrowthStage() << tree->getTreeSpecies() << " a " << tree->getTreeType() << std::endl;
-		std::cout << "is " << tree->getHeight() << " meters tall and is " << tree->getSymmetry() * 100 << " percent symmetrical" << std::endl;
-		std::cout << "Health:  " << tree->getHealth() * 100 << std::endl;
+		std::cout << "Tree: " << tree->getName() << "(ID: " << tree->getMyId() << ")" 
+                  << " is a " << tree->getGrowthStage() << " " << tree->getTreeSpecies()
+                  << " a " << tree->getTreeType() << std::endl;
+
+		std::cout << "is " << tree->getHeight() 
+                  << " meters tall and is " << (tree->getSymmetry() * 100) << " percent symmetrical" << std::endl;
+
+		std::cout << "Health:  " << (tree->getHealth() * 100) << std::endl;
 		std::cout << "Stored:  " << tree->getWater() << " Gallons of Water" << std::endl;
 		std::cout << "Stored:  " << tree->getN() << " Units of Nitrogen" << std::endl;
 		std::cout << "Stored:  " << tree->getPh() << " Units of Phosphorous" << std::endl;

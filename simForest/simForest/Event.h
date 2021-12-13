@@ -29,7 +29,7 @@ public:
     virtual ~Event() = default;
 
 	void setDate(Date d);
-	Date getDate();
+	const Date& getDate() const;
 
 	Date date;
 	int weight;
