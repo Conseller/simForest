@@ -1,2 +1,6 @@
-﻿  OutputEvent.cpp
+﻿  main.cpp
+  Oak.cpp
+  OutputEvent.cpp
+  Source.cpp
+  Generating Code...
   simForest.vcxproj -> C:\Users\user\source\repos\simForest\simForest\Debug\simForest.exe

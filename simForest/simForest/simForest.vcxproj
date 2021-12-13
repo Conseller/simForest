@@ -148,6 +148,7 @@
     <ClInclude Include="Fungus.h" />
     <ClInclude Include="GroundSubSquare.h" />
     <ClInclude Include="GrowEvent.h" />
+    <ClInclude Include="Fir.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Microclimate.h" />
     <ClInclude Include="Oak.h" />
@@ -169,6 +170,7 @@
     <ClCompile Include="Oak.cpp" />
     <ClCompile Include="OutputEvent.cpp" />
     <ClCompile Include="SimulationExecutive.cpp" />
+    <ClCompile Include="Source.cpp" />
     <ClCompile Include="Terrain.cpp" />
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="Weather.cpp" />
