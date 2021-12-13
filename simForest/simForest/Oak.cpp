@@ -21,6 +21,7 @@ Oak::Oak()
 Oak::Oak(GroundSubSquare location)
     //:location(location)
 {
+	name = "chuck";
 	age = 250;
 	symmetry = 1.0;
 	fullSun = 1.0;
@@ -32,5 +33,7 @@ Oak::Oak(GroundSubSquare location)
 	storedPh = 100;
 	storedMa = 100;
     treeSpecies = BaseTree::TreeSpecies::OAK;
+    treeType = BaseTree::TreeType::DECIDUOUS;
+    growthStage = BaseTree::GrowthStage::ADULT;
 }
 

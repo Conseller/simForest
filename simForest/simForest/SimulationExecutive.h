@@ -35,7 +35,7 @@ private:
 	Date currentDate;
 	bool hasNextEvent;
 	bool isEndOfDay;
-	void endOfDay(); ///< Changes weather, date, things that change from day to day but are not events
+	
 	void Continue();
 
 public:
@@ -47,4 +47,5 @@ public:
 	void runSimulationOneDay();///< Run simulation for one day and then stop
 	Date getSimulationDate();
 	void addEvent(Event* eventToAdd); ///< Add event to event queue
+	void endOfDay(); ///< Changes weather, date, things that change from day to day but are not events
 };

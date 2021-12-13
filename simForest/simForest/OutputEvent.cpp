@@ -1,4 +1,5 @@
 #include "OutputEvent.h"
+#include "SimulationExecutive.h"
 
 /**
 *
@@ -25,12 +26,12 @@ void OutputEvent::ExecuteEvent()
 
 	for(std::shared_ptr<BaseTree> tree : allTheTreesPointer)
 	{
-		std::cout << "Todays Weather is: " << std::endl;
+		//std::cout << "\n Todays Weather is: " << std::endl;
 		std::cout << std::endl; 
 		std::cout << std::endl; 
 		std::cout << std::endl; 
-		std::cout << "Tree: " << tree->getName() << " is a" << tree->getTreeSpecies() << " a" << tree->getGrowthStage() << " " << tree->getTreeType() << std::endl;
-		std::cout << "and is " << tree->getSymmetry() * 100 << " percent symmetrical" << std::endl;
+		std::cout << "Tree: " << tree->getName() << " is a" << tree->getGrowthStage() << tree->getTreeSpecies() << " a " << tree->getTreeType() << std::endl;
+		std::cout << "is " << tree->getHeight() << " meters tall and is " << tree->getSymmetry() * 100 << " percent symmetrical" << std::endl;
 		std::cout << "Health:  " << tree->getHealth() * 100 << std::endl;
 		std::cout << "Stored:  " << tree->getWater() << " Gallons of Water" << std::endl;
 		std::cout << "Stored:  " << tree->getN() << " Units of Nitrogen" << std::endl;

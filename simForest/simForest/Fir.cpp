@@ -19,6 +19,7 @@ Fir::Fir()
 
 Fir::Fir(GroundSubSquare location)
 {
+	name = "jim";
 	age = 100;
 	symmetry = 1.0;
 	fullSun = 1.0;
@@ -29,5 +30,8 @@ Fir::Fir(GroundSubSquare location)
 	storedN = 100;
 	storedPh = 100;
 	storedMa = 100;
+	treeSpecies = BaseTree::TreeSpecies::FIR;
+	treeType = BaseTree::TreeType::CONIFEROUS;
+	growthStage = BaseTree::GrowthStage::ADULT;
 }
 
